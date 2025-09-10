@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://7wqklk4lgypa"]
 
-[ext_resource type="Script" uid="uid://e0a1jant5wsi" path="res://menu.gd" id="1_yqeox"]
+[ext_resource type="Script" uid="uid://e0a1jant5wsi" path="res://scripts/menu.gd" id="1_yqeox"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -31,7 +31,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Start"
 
-[node name="OptionButton" type="Button" parent="VBoxContainer"]
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -60,4 +60,5 @@ scroll_active = false
 tab_size = 10
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
