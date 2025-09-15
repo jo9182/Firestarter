@@ -1,5 +1,6 @@
 extends Node
 
+
 var current_scene = "world" #world cliff_side
 var transition_scene = false
 
