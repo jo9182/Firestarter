@@ -3,12 +3,13 @@ ea4bc82a6ad023ab7ee23ee620429895
 icon.svg::CompressedTexture2D/CompressedTexture2D::4408965281071173183::1757610580::1757610580::1::::<><><>0<>0<>3247f9d847c96e4ecb3fda811f925f05<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://scenes/::1757610580
 cliffside.tscn::PackedScene/PackedScene::8067687894697754854::1757610582::0::1::::<><><>0<>0<><>::uid://bnpymb3j213mj::::res://scripts/cliffside.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn
-menu.tscn::PackedScene::2292449231367150558::1757906270::0::1::::<><><>0<>0<><>::uid://e0a1jant5wsi::::res://scripts/menu.gd
-player.tscn::PackedScene::6291764294644898006::1757906276::0::1::::<><><>0<>0<><>::uid://cgnf3uubgpjv0::::res://scripts/player.gd<>uid://ornyegg68xn0::::res://sprites/characters/player.png
-river.tscn::PackedScene::168252470980994655::1757906274::0::1::::<><><>0<>0<><>::uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png
-settings.tscn::PackedScene::2723542487616803923::1757906272::0::1::::<><><>0<>0<><>::uid://brhd770370ivp::::res://scripts/settings.gd
-woodland.tscn::PackedScene::7998305162979629935::1757906272::0::1::::<><><>0<>0<><>::uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png
-world.tscn::PackedScene::6292903423690684200::1757906274::0::1::::<><><>0<>0<><>::uid://ckm665haex1kq::::res://scripts/world.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn
+menu.tscn::PackedScene::2292449231367150558::1757960408::0::1::::<><><>0<>0<><>::uid://e0a1jant5wsi::::res://scripts/menu.gd
+player.tscn::PackedScene::6291764294644898006::1757960414::0::1::::<><><>0<>0<><>::uid://cgnf3uubgpjv0::::res://scripts/player.gd<>uid://ornyegg68xn0::::res://sprites/characters/player.png
+river.tscn::PackedScene::168252470980994655::1757960412::0::1::::<><><>0<>0<><>::uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png
+settings.tscn::PackedScene::2723542487616803923::1757960410::0::1::::<><><>0<>0<><>::uid://brhd770370ivp::::res://scripts/settings.gd
+woodland.gd::GDScript::5295531521801392302::1757960012::0::1::::<>Node2D<><>0<>0<><>::
+woodland.tscn::PackedScene::7998305162979629935::1757960410::0::1::::<><><>0<>0<><>::uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://chpgvo3jokqp7::::res://scenes/woodland.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png
+world.tscn::PackedScene::6292903423690684200::1757960412::0::1::::<><><>0<>0<><>::uid://ckm665haex1kq::::res://scripts/world.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn
 ::res://scripts/::1757610584
 cliffside.gd::GDScript/GDScript::3331320050875600945::1757610584::0::1::::<>Node2D<><>0<>0<><>::
 global.gd::GDScript/GDScript::4626912151735352607::1757614156::0::1::::<>Node<><>0<>0<><>::
@@ -43,6 +44,7 @@ decor_16x16.png::CompressedTexture2D/CompressedTexture2D::3505723172671554915::1
 fences.png::CompressedTexture2D/CompressedTexture2D::6720656947762041982::1757610588::1757611156::1::::<><><>0<>0<>dbe044ec0b7092cb32a9dcb81b411470<>res://.godot/imported/fences.png-0f66440450c525f7884779a13402abd8.ctex::
 grass.png::CompressedTexture2D/CompressedTexture2D::3090257437125762466::1757610588::1757611156::1::::<><><>0<>0<>0791c56b4f6aa79b9dfefd05019c78d1<>res://.godot/imported/grass.png-8759c2adff3d7fa7bfca55eab27fc3e4.ctex::
 plains.png::CompressedTexture2D/CompressedTexture2D::5700272571092713264::1757610588::1757611156::1::::<><><>0<>0<>409b5489bc6ab691b22060586464e235<>res://.godot/imported/plains.png-0810c9c146aedd28ef1f633b4a861ce8.ctex::
+topdown.png::CompressedTexture2D::194856473292390372::1756960764::1758043178::1::::<><><>0<>0<>c9ef267e4b99620ff42b2a7600253657<>res://.godot/imported/topdown.png-1c771fea5411772a45459e22bc5fcbfc.ctex::
 water1.png::CompressedTexture2D/CompressedTexture2D::7093069798056423365::1757610588::1757611156::1::::<><><>0<>0<>feae769663b7a88eb1562475abd04af5<>res://.godot/imported/water1.png-c37c308172d159d21f4a2cd1c32e39c2.ctex::
 water2.png::CompressedTexture2D/CompressedTexture2D::1859651020202815050::1757610588::1757611156::1::::<><><>0<>0<>00ca86e00679daec1ea43d7e17682221<>res://.godot/imported/water2.png-6fa36be1e43c0202050f27fe9502ad6d.ctex::
 water3.png::CompressedTexture2D/CompressedTexture2D::6065722035605030199::1757610588::1757611156::1::::<><><>0<>0<>d1e1454a530d538fb06221fb2f0d43fe<>res://.godot/imported/water3.png-b253847eafd7fec7821b3afc33775bc3.ctex::
