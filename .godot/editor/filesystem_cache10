@@ -18,8 +18,12 @@ player.gd::GDScript::5221166008627488255::1757006444::0::1::::<>CharacterBody2D<
 settings.gd::GDScript::3594322686884588289::1757528265::0::1::::<>Control<><>0<>0<><>::
 world.gd::GDScript::5501441509722470404::1757959914::0::1::::<>Node2D<><>0<>0<><>::
 ::res://sounds/::1758045377
-::res://sounds/music/::1758045381
+::res://sounds/music/::1758046204
+MainMenuSong.wav::AudioStreamWAV::1034866163392531305::1758046113::1758046210::1::::<><><>0<>0<>d825929c538bacba8ef82f31527a43f5<>res://.godot/imported/MainMenuSong.wav-78442f4687a7598eecb1b3f33ad4b880.sample::
 Victory-Jingle-1.wav::AudioStreamWAV::4167306860220041297::1758045325::1758045438::1::::<><><>0<>0<>ce555746e52c96ac3d6eed3a042f85b1<>res://.godot/imported/Victory-Jingle-1.wav-a77d38c14bb6a9fe83c335a342ea0ed6.sample::
+::res://sounds/music/json (For BeepBox)/::1758046187
+MainMenuSong.json::JSON::-1::1758046103::0::1::::<><><>0<>0<><>::
+Victory-Jingle-1.json::JSON::-1::1758045554::0::1::::<><><>0<>0<><>::
 ::res://sounds/sfx/::1758045374
 ::res://sprites/::1758044717
 ::res://sprites/characters/::1757436983
