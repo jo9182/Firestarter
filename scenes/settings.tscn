@@ -12,7 +12,7 @@ grow_vertical = 2
 script = ExtResource("1_5p8wc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-z_index = 1
+z_index = -1
 layout_mode = 0
 offset_left = 390.0
 offset_top = 238.0
@@ -22,7 +22,6 @@ scale = Vector2(9.76211, 4.26824)
 color = Color(0.809982, 0.388597, 0.235883, 1)
 
 [node name="Button" type="Button" parent="."]
-z_index = 1
 custom_minimum_size = Vector2(30, 0)
 layout_mode = 0
 offset_left = 750.0
@@ -41,7 +40,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="volLabel" type="Label" parent="VBoxContainer"]
-z_index = 1
 layout_mode = 2
 text = "Volume"
 
@@ -51,7 +49,6 @@ custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 
 [node name="muteLabel" type="Label" parent="VBoxContainer"]
-z_index = 1
 layout_mode = 2
 text = "Mute"
 
