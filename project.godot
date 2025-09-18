@@ -11,16 +11,13 @@ config_version=5
 [application]
 
 config/name="Firestarter"
+run/main_scene="uid://7wqklk4lgypa"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 global="*res://scripts/global.gd"
-
-[display]
-
-window/size/mode=3
 
 [rendering]
 
