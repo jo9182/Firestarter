@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 [gd_scene load_steps=15 format=4 uid="uid://cvwlg2gfeu7qi"]
+=======
+[gd_scene load_steps=13 format=4 uid="uid://cvwlg2gfeu7qi"]
+>>>>>>> d465a2c887e893344f43846a9dbb931245421a5b
 
 [ext_resource type="Script" uid="uid://ckm665haex1kq" path="res://scripts/world.gd" id="1_71j4m"]
 [ext_resource type="Texture2D" uid="uid://cnhiwk3fh2mts" path="res://sprites/tilesets/plains.png" id="2_qfnet"]
 [ext_resource type="Texture2D" uid="uid://bka7dakj81ko5" path="res://sprites/tilesets/grass.png" id="3_i7141"]
 [ext_resource type="Texture2D" uid="uid://c5ujchac7f61p" path="res://sprites/objects/objects.png" id="4_4mrxx"]
 [ext_resource type="PackedScene" uid="uid://cvv1o6epkfaqo" path="res://scenes/player.tscn" id="5_7r4gi"]
+[ext_resource type="PackedScene" uid="uid://c2nfodrjf8ejq" path="res://scenes/pause_menu.tscn" id="6_qfnet"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_71j4m"]
 texture = ExtResource("2_qfnet")
@@ -180,6 +185,7 @@ polygon = PackedVector2Array(2, -47, 353, -47, 353, -67, 418, -67, 418, -47, 656
 position = Vector2(385.5, -57)
 shape = SubResource("RectangleShape2D_dwbse")
 
+<<<<<<< HEAD
 [node name="toWestfromCamp" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="toWestfromCamp"]
@@ -200,3 +206,15 @@ shape = SubResource("RectangleShape2D_i7141")
 
 [connection signal="body_entered" from="toCavefromCamp" to="." method="_on_cliffside_transition_area_body_entered"]
 [connection signal="body_exited" from="toCavefromCamp" to="." method="_on_cliffside_transition_area_body_exited"]
+=======
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pauseMenu" parent="CanvasLayer" instance=ExtResource("6_qfnet")]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[connection signal="body_entered" from="cliffside_transition_area" to="." method="_on_cliffside_transition_area_body_entered"]
+[connection signal="body_exited" from="cliffside_transition_area" to="." method="_on_cliffside_transition_area_body_exited"]
+>>>>>>> d465a2c887e893344f43846a9dbb931245421a5b
