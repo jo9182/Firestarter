@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=4 uid="uid://cdav8ffl2te8y"]
+[gd_scene load_steps=15 format=4 uid="uid://cdav8ffl2te8y"]
 
 [ext_resource type="PackedScene" uid="uid://cvv1o6epkfaqo" path="res://scenes/player.tscn" id="1_ct465"]
 [ext_resource type="Texture2D" uid="uid://cnhiwk3fh2mts" path="res://sprites/tilesets/plains.png" id="2_25qhm"]
 [ext_resource type="Texture2D" uid="uid://bka7dakj81ko5" path="res://sprites/tilesets/grass.png" id="3_unytk"]
 [ext_resource type="Texture2D" uid="uid://c5ujchac7f61p" path="res://sprites/objects/objects.png" id="4_ss3bu"]
+[ext_resource type="PackedScene" uid="uid://c2nfodrjf8ejq" path="res://scenes/pause_menu.tscn" id="5_25qhm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xy7b1"]
 texture = ExtResource("2_25qhm")
@@ -255,3 +256,11 @@ tile_set = SubResource("TileSet_vxxjm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="toWoodlandfromDeepWoods"]
 position = Vector2(312, -4.5)
 shape = SubResource("RectangleShape2D_ct465")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pauseMenu" parent="CanvasLayer" instance=ExtResource("5_25qhm")]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
