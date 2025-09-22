@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 global="*res://scripts/global.gd"
 
+<<<<<<< HEAD
+=======
 [display]
 
 window/size/mode=3
@@ -34,6 +36,7 @@ esc={
 ]
 }
 
+>>>>>>> d465a2c887e893344f43846a9dbb931245421a5b
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
