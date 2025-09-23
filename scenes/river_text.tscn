@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://oifduakdxlv7"]
+
+[ext_resource type="Script" uid="uid://eqeyomrikqv1" path="res://scripts/river_text.gd" id="1_gjwm6"]
+
+[node name="RiverText" type="TextEdit"]
+visible = false
+offset_left = 310.0
+offset_top = 188.0
+offset_right = 649.0
+offset_bottom = 261.0
+text = "You found some wet rocks by the river you
+pick them up and take them with you."
+indent_wrapped_lines = true
+use_custom_word_separators = true
+script = ExtResource("1_gjwm6")
