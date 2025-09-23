@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c2nfodrjf8ejq"]
+[gd_scene load_steps=8 format=3 uid="uid://c2nfodrjf8ejq"]
 
 [ext_resource type="Script" uid="uid://b07wmpv7orxwp" path="res://scripts/pause_menu.gd" id="1_n87rw"]
 [ext_resource type="Shader" uid="uid://dnbp7iqvmgbmw" path="res://shaders/pause_menu.gdshader" id="2_myx47"]
+[ext_resource type="PackedScene" uid="uid://be2kl1733ws56" path="res://scenes/settings.tscn" id="3_kukqi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kukqi"]
 shader = ExtResource("2_myx47")
-shader_parameter/lod = 1.156
+shader_parameter/lod = 0.0
 
 [sub_resource type="Animation" id="Animation_kukqi"]
 length = 0.001
@@ -17,7 +18,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1.156, -0.15, 0, 0.15, 0),
+"points": PackedFloat32Array(0, -0.15, 0, 0.15, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/1/type = "bezier"
@@ -76,7 +77,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(1.156, -0.15, 0, 0.15, 0, 1.156, -0.15, 0, 0.15, 0),
+"points": PackedFloat32Array(0, -0.15, 0, 0.15, 0, 1.156, -0.15, 0, 0.15, 0),
 "times": PackedFloat32Array(0, 0.3)
 }
 tracks/1/type = "bezier"
@@ -151,8 +152,8 @@ material = SubResource("ShaderMaterial_kukqi")
 layout_mode = 0
 offset_left = -573.0
 offset_top = -324.0
-offset_right = -493.0
-offset_bottom = -243.0
+offset_right = -338.0
+offset_bottom = -116.0
 scale = Vector2(14.36, 8)
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
@@ -183,6 +184,7 @@ layout_mode = 2
 text = "Restart"
 
 [node name="Settings" type="Button" parent="PanelContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Settings"
 
@@ -194,6 +196,11 @@ text = "Quit"
 libraries = {
 &"": SubResource("AnimationLibrary_5d2l8")
 }
+
+[node name="settings" parent="." instance=ExtResource("3_kukqi")]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
