@@ -5,8 +5,8 @@ var transition_scene = false
 
 var player_exit_cliffside_posx = 369 
 var player_exit_cliffside_posy = -37
-var player_start_posx = 9 
-var player_start_posy = 0  
+var player_start_posx = 330 
+var player_start_posy = 43  
 
 var game_first_loadin = true
 
