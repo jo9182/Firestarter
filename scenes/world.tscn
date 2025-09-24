@@ -116,9 +116,9 @@ texture = ExtResource("5_i7141")
 1:0/0/y_sort_origin = 5
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.51802, 6.1152, 6.29506, 4.85619, 6.29506, 8, -6.47491, 8, -6.47491, 4.85619, -2.33816, 5.39576)
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.47491, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.83463, -8, 8, -8, 8, 5.93534, -8, 5.93534)
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 6.1152, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 6.47491, -8, 8, 5.93534, -8, 5.93534)
 
 [sub_resource type="TileSet" id="TileSet_ic0uy"]
 physics_layer_0/collision_layer = 1
