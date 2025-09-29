@@ -2,7 +2,8 @@ extends Control
 
 
 
-
+func _ready():
+	$Button.grab_focus()
 
 
 

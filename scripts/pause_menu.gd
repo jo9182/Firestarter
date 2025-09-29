@@ -3,6 +3,7 @@ extends Control
 
 func _ready():
 	$AnimationPlayer.play("RESET")
+	$PanelContainer/VBoxContainer/Resume.grab_focus()
 
 func _process(delta):
 	esc()
