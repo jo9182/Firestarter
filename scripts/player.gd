@@ -1,84 +1,96 @@
-extends CharacterBody2D
+class_name  Player extends CharacterBody2D
 
-const speed = 100
-var current_dir = "none"
+signal DirectionChanged( NewDirection : Vector2 )
+
+## a variable that has two features (x,y) and in this instance DOWN means (0,-1)
+var cardinalDirection : Vector2 = Vector2.DOWN
+## a variable that has two features (x,y) and in this instance ZERO means (0,0)
+
+const DIR_4 = [Vector2.RIGHT, Vector2.DOWN, Vector2.LEFT, Vector2.UP ]
+var direction : Vector2 = Vector2.ZERO
+## on ready variable only exsist when the node is in the scene tree and will only call on it if it exsist
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var sprite: Sprite2D = $Sprite2D
+
+@onready var state_machine: PlayerStateMachine = $StateMachine
+
+
+
+
+var invulnarable : bool = false
+var hp : int = 6
+var max_hp : int = 6
 
 func _ready():
-	$AnimatedSprite2D.play("front_idle")
+	PlayerManager.player = self
+	state_machine.initalize(self)
 
-func player():
 	pass
 
-func _physics_process(delta):
-	player_movement(delta)
-	#current_camera()
+func _process(_delta):
+	## gets how strong the direction is to the right by subtracting the left and the right so it is either 1,-1, or 0
+	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
+	## gets how strong the direction is to the right by subtracting the up and the down so it is either 1,-1, or 0
+	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 	
-func player_movement(_delta):
+	## prevents the total magnitude of the vector from being greater than one
+	## When moving sideways you won't move faster
+	direction = direction.normalized()
 	
-	if Input.is_action_pressed("ui_right"):
-		current_dir = "right"
-		play_anim(1)
-		velocity.x = speed
-		velocity.y = 0
-	elif Input.is_action_pressed("ui_left"):
-		current_dir = "left"
-		play_anim(1)
-		velocity.x = -speed
-		velocity.y = 0
-	elif Input.is_action_pressed("ui_down"):
-		current_dir = "down"
-		play_anim(1)
-		velocity.x = 0
-		velocity.y = speed
-	elif Input.is_action_pressed("ui_up"):
-		current_dir = "up"
-		play_anim(1)
-		velocity.x = 0
-		velocity.y = -speed
-	else:
-		play_anim(0)
-		velocity.x = 0
-		velocity.y = 0
 	
+## causes movement
+func _physics_process(_delta):
 	move_and_slide()
+
+## boolean method
+func setDirection() -> bool:
+	## if you haven't moved yet don't update
+	if direction == Vector2.ZERO:
+		return false
+	# Creates a variable that is an int that int is rounded so that it is an int it calls 
+	#the direction variable angle and divides it to ensure that it can only be one of the 4 directions in the variableDIR_4
+	#The cardinal direction is addedto skew the direction and keep the player facing one direction when moving diagonal
+	var directionID : int = int(round((direction + cardinalDirection * 0.1).angle() / TAU * DIR_4.size()))
 	
-func play_anim(movement):
-	var dir = current_dir
-	var anim = $AnimatedSprite2D
+	#
+	var newDirection = DIR_4[directionID]
 	
-	if dir == "right":
-		anim.flip_h = false
-		if movement == 1:
-			anim.play("side_walk")
-		elif movement == 0:
-			anim.play("side_idle")
-	elif dir == "left":
-		anim.flip_h = true
-		if movement == 1:
-			anim.play("side_walk")
-		elif movement == 0:
-			anim.play("side_idle")
-	elif dir == "down":
-		anim.flip_h = true
-		if movement == 1:
-			anim.play("front_walk")
-		elif movement == 0:
-			anim.play("front_idle")
-	elif dir == "up":
-		anim.flip_h = true
-		if movement == 1:
-			anim.play("back_walk")
-		elif movement == 0:
-			anim.play("back_idle")
+	## if you did move and you moved horizontally which way did you go
+	## this is found through the Vector2 (x,y) by determing if the x is negative
+
+	## if you keep moving in the same direction then you do not update
+	if newDirection == cardinalDirection:
+		return false
+	
+	## otherwise change your cardinalDirection to the newDirection and update animation
+	cardinalDirection = newDirection
+	##
+	DirectionChanged.emit(newDirection)
+	sprite.scale.x = -1 if cardinalDirection == Vector2.LEFT else 1
+	return true
+	
+
+	
+	## void method
+func updateAnimation(state : String) -> void:
+	## calls the onready variable to use a feature of godot AnimationPlayer nodes called play that
+	## allows you to play an animation and it chooses the correct animation by determing the state and the direction
+	animation_player.play(state + "_" + animDirection())
+	pass
+	
+	## String method
+func animDirection() -> String:
+	## if (0,-1) return "down"
+	if cardinalDirection == Vector2.DOWN:
+		return "down"
+	## if (0,1) return "up"
+	elif cardinalDirection == Vector2.UP:
+		return "up"
+	## otherwise return side
+	else :
+		return "side"
 
 
-func _on_cliffside_transition_area_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
 	
-#func current_camera():
-	#if global.current_scene == "world":
-		#$worldCamera.enabled = true
-		#$cliffsideCamera.enabled = false
-	#elif global.current_scene == "cliffside":
-		#$worldCamera.enabled = false
-		#$cliffsideCamera.enabled = true
+
+	

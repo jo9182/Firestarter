@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://e0a1jant5wsi" path="res://scripts/menu.gd" id="1_yqeox"]
 
 [node name="Menu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,18 +27,21 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
+z_index = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Start"
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer"]
+z_index = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Options"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer"]
+z_index = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
