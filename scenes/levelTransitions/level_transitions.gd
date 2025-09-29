@@ -31,12 +31,13 @@ func _ready() -> void:
 	if Engine.is_editor_hint():
 		return
 		
-	monitoring = false
+	#monitoring = false
+	body_entered.connect(_player_entered)
 	_place_player()
 	
 	await global.level_loaded
 	monitoring = true
-	body_entered.connect(_player_entered)
+	
 	pass
 	
 func _player_entered(_p : Node2D) -> void:
