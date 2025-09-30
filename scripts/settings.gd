@@ -3,7 +3,7 @@ extends Control
 
 
 func _ready():
-	$Button.grab_focus()
+	$CanvasLayer/Button.grab_focus()
 
 
 

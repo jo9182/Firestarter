@@ -3,8 +3,7 @@
 [ext_resource type="Script" uid="uid://brhd770370ivp" path="res://scripts/settings.gd" id="1_5p8wc"]
 
 [node name="settings" type="Control"]
-process_mode = 3
-z_index = 3
+z_index = 20
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,8 +12,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5p8wc")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_priority = 1
+layer = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+z_index = 3
 offset_left = 390.0
 offset_top = 238.0
 offset_right = 430.0
@@ -22,17 +25,17 @@ offset_bottom = 278.0
 scale = Vector2(9.76211, 4.26824)
 color = Color(0.809982, 0.388597, 0.235883, 1)
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="CanvasLayer"]
+z_index = 3
 custom_minimum_size = Vector2(30, 0)
-layout_mode = 0
 offset_left = 750.0
 offset_top = 238.0
 offset_right = 781.0
 offset_bottom = 269.0
 text = "X"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+z_index = 3
 offset_left = 426.0
 offset_top = 275.0
 offset_right = 726.0
@@ -40,23 +43,23 @@ offset_bottom = 373.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="volLabel" type="Label" parent="VBoxContainer"]
+[node name="volLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 text = "Volume"
 
-[node name="volume" type="HSlider" parent="VBoxContainer"]
+[node name="volume" type="HSlider" parent="CanvasLayer/VBoxContainer"]
 z_index = 4
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 
-[node name="muteLabel" type="Label" parent="VBoxContainer"]
+[node name="muteLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 text = "Mute"
 
-[node name="mute" type="CheckBox" parent="VBoxContainer"]
+[node name="mute" type="CheckBox" parent="CanvasLayer/VBoxContainer"]
 z_index = 4
 layout_mode = 2
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="value_changed" from="VBoxContainer/volume" to="." method="_on_volume_value_changed"]
-[connection signal="toggled" from="VBoxContainer/mute" to="." method="_on_mute_toggled"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="CanvasLayer/VBoxContainer/volume" to="." method="_on_volume_value_changed"]
+[connection signal="toggled" from="CanvasLayer/VBoxContainer/mute" to="." method="_on_mute_toggled"]
