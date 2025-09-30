@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=19 format=4 uid="uid://dm7bv1511cala"]
+=======
+[gd_scene load_steps=20 format=4 uid="uid://dm7bv1511cala"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://dykn4t10pnxt" path="res://scenes/levelTransitions/level.gd" id="1_q1f6m"]
 [ext_resource type="Texture2D" uid="uid://cnhiwk3fh2mts" path="res://sprites/tilesets/plains.png" id="2_o3jk3"]
@@ -7,8 +11,15 @@
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="5_uihar"]
 [ext_resource type="Texture2D" uid="uid://dgjwpdmh6tn10" path="res://sprites/alt tilesets/Wall_Variations.png" id="6_b88vm"]
 [ext_resource type="PackedScene" uid="uid://c2nfodrjf8ejq" path="res://scenes/pause_menu.tscn" id="6_o3jk3"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://dfo6m0aoebnaw" path="res://scenes/levelTransitions/Level_transitions.tscn" id="8_q1f6m"]
 [ext_resource type="PackedScene" uid="uid://cvv1o6epkfaqo" path="res://scenes/player.tscn" id="9_uihar"]
+=======
+[ext_resource type="Texture2D" uid="uid://dwfkg3rbpw5qo" path="res://sprites/alt tilesets/plains-altREMEMBERTHISJOSEPHFORTHECAVE.png" id="7_q1f6m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hjun4"]
+size = Vector2(41, 38)
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjun4"]
 texture = ExtResource("2_o3jk3")
@@ -560,12 +571,84 @@ texture = ExtResource("6_b88vm")
 14:29/0 = 0
 15:29/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uihar"]
+texture = ExtResource("7_q1f6m")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_hjun4"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0ct4m")
 sources/1 = SubResource("TileSetAtlasSource_8t3wa")
 sources/2 = SubResource("TileSetAtlasSource_i0aq1")
 sources/3 = SubResource("TileSetAtlasSource_q1f6m")
+sources/4 = SubResource("TileSetAtlasSource_uihar")
 
 [node name="cliffside" type="Node2D"]
 y_sort_enabled = true
@@ -579,7 +662,7 @@ position = Vector2(154, 162)
 [node name="collisions" type="StaticBody2D" parent="."]
 
 [node name="boundary" type="CollisionPolygon2D" parent="collisions"]
-polygon = PackedVector2Array(95, 60, 227, 60, 228, 115, 215, 119, 213, 134, 214, 165, 172, 165, 172, 184, 132, 184, 131, 165, 92, 165, 93, 56, 79, 121, 86, 196, 247, 199, 240, 50, 96, 50)
+polygon = PackedVector2Array(97, 55, 228, 56, 228, 115, 215, 119, 213, 134, 214, 165, 172, 165, 172, 184, 132, 184, 131, 165, 92, 165, 93, 56, 79, 121, 86, 196, 247, 199, 240, 50, 93, 50)
 
 [node name="ground" type="TileMapLayer" parent="."]
 use_parent_material = true
@@ -588,9 +671,15 @@ tile_set = SubResource("TileSet_53un3")
 script = ExtResource("5_uihar")
 
 [node name="cliff" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAFAAMAAAAEAAQAAAAOAAMAAAAFAAQAAAANAAcAAAABAAQAAAAOAAcAAAAFAAUAAAANAAoAAAAFAAUAAAAFAAoAAAAEAAUAAAAOAAQAAAABAAUAAAAOAAUAAAABAAUAAAAOAAYAAAABAAUAAAAFAAQAAAADAAUAAAAFAAUAAAADAAUAAAAFAAYAAAADAAUAAAAFAAcAAAADAAUAAAAFAAgAAAADAAUAAAAFAAkAAAADAAUAAAANAAgAAAABAAUAAAANAAkAAAABAAUAAAAMAAoAAAACAAQAAAALAAoAAAACAAQAAAAHAAoAAAACAAQAAAAGAAoAAAACAAQAAAAIAAoAAAACAAQAAAAJAAoAAAACAAQAAAAKAAoAAAACAAQAAAAIAAsAAAACAAUAAAAIAAwAAAACAAUAAAAJAAwAAAACAAUAAAAKAAwAAAACAAUAAAAKAAsAAAACAAUAAAAJAAsAAAACAAUAAAAGAAMAAAACAAYAAAAMAAMAAAACAAYAAAANAAMAAAACAAYAAAAGAAIABAACAAUAAAAMAAIABAACAAUAAAANAAIABAACAAUAAAAOAAIABAACAAUAAAAFAAIABAACAAUAAAAIAAEAAAACAAYAAAAJAAEAAAACAAYAAAAKAAEAAAACAAYAAAA=")
+tile_set = SubResource("TileSet_hjun4")
+
+[node name="cliff2" type="TileMapLayer" parent="."]
 z_index = 1
 use_parent_material = true
-tile_map_data = PackedByteArray("AAAFAAMAAAAEAAQAAAAOAAMAAAAFAAQAAAANAAcAAAABAAQAAAAOAAcAAAAFAAUAAAANAAoAAAAFAAUAAAAFAAoAAAAEAAUAAAAOAAQAAAABAAUAAAAOAAUAAAABAAUAAAAOAAYAAAABAAUAAAAFAAQAAAADAAUAAAAFAAUAAAADAAUAAAAFAAYAAAADAAUAAAAFAAcAAAADAAUAAAAFAAgAAAADAAUAAAAFAAkAAAADAAUAAAANAAgAAAABAAUAAAANAAkAAAABAAUAAAAMAAoAAAACAAQAAAALAAoAAAACAAQAAAAHAAoAAAACAAQAAAAGAAoAAAACAAQAAAAIAAoAAAACAAQAAAAJAAoAAAACAAQAAAAKAAoAAAACAAQAAAAIAAsAAAACAAUAAAAIAAwAAAACAAUAAAAJAAwAAAACAAUAAAAKAAwAAAACAAUAAAAKAAsAAAACAAUAAAAJAAsAAAACAAUAAAAGAAMAAAACAAYAAAAHAAMAAAACAAYAAAAIAAMAAAACAAYAAAAJAAMAAAACAAYAAAAKAAMAAAACAAYAAAALAAMAAAACAAYAAAAMAAMAAAACAAYAAAANAAMAAAACAAYAAAA=")
+tile_map_data = PackedByteArray("AAAFAAMAAAAEAAQAAAAOAAMAAAAFAAQAAAANAAcAAAABAAQAAAAOAAcAAAAFAAUAAAANAAoAAAAFAAUAAAAFAAoAAAAEAAUAAAAOAAQAAAABAAUAAAAOAAUAAAABAAUAAAAOAAYAAAABAAUAAAAFAAQAAAADAAUAAAAFAAUAAAADAAUAAAAFAAYAAAADAAUAAAAFAAcAAAADAAUAAAAFAAgAAAADAAUAAAAFAAkAAAADAAUAAAANAAgAAAABAAUAAAANAAkAAAABAAUAAAAMAAoAAAACAAQAAAALAAoAAAACAAQAAAAHAAoAAAACAAQAAAAGAAoAAAACAAQAAAAIAAoAAAACAAQAAAAJAAoAAAACAAQAAAAKAAoAAAACAAQAAAAIAAsAAAACAAUAAAAIAAwAAAACAAUAAAAJAAwAAAACAAUAAAAKAAwAAAACAAUAAAAKAAsAAAACAAUAAAAJAAsAAAACAAUAAAAGAAMAAAACAAYAAAAHAAMABAADAAYAAAAIAAMABAADAAoAAAAJAAMABAAEAAoAAAAKAAMABAAFAAoAAAALAAMABAABAAYAAAAMAAMAAAACAAYAAAANAAMAAAACAAYAAAAJAAIABAAEAAkAAAAIAAIABAADAAkAAAAHAAIABAADAAUAAAAGAAIABAACAAUAAAAKAAIABAAFAAkAAAALAAIABAABAAUAAAAMAAIABAACAAUAAAANAAIABAACAAUAAAAOAAIABAACAAUAAAAFAAIABAACAAUAAAAIAAEABAADAAgAAAAJAAEABAAEAAgAAAAKAAEABAAFAAgAAAAHAAEABAAEAAQAAAALAAEABAAFAAQAAAA=")
 tile_set = SubResource("TileSet_hjun4")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
