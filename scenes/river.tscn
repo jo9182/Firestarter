@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cnrdghpgdh6n"]
+[gd_scene load_steps=20 format=4 uid="uid://cnrdghpgdh6n"]
 
 [ext_resource type="Texture2D" uid="uid://cnhiwk3fh2mts" path="res://sprites/tilesets/plains.png" id="1_f0ang"]
 [ext_resource type="PackedScene" uid="uid://cvv1o6epkfaqo" path="res://scenes/player.tscn" id="1_kc0ln"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://oifduakdxlv7" path="res://scenes/river_text.tscn" id="6_yn7bc"]
 [ext_resource type="PackedScene" uid="uid://dfo6m0aoebnaw" path="res://scenes/levelTransitions/Level_transitions.tscn" id="7_3bh4n"]
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="7_wsohc"]
+[ext_resource type="PackedScene" uid="uid://c2nfodrjf8ejq" path="res://scenes/pause_menu.tscn" id="10_lc7dt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uc0vf"]
 texture = ExtResource("1_f0ang")
@@ -349,3 +350,12 @@ position = Vector2(0, 248)
 mylevel = "uid://cvwlg2gfeu7qi"
 target_transition_area = "LevelTransition3"
 size = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pauseMenu" parent="CanvasLayer" instance=ExtResource("10_lc7dt")]
+y_sort_enabled = true
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
