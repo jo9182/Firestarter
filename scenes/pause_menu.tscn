@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://c2nfodrjf8ejq"]
+[gd_scene load_steps=7 format=3 uid="uid://c2nfodrjf8ejq"]
 
 [ext_resource type="Script" uid="uid://b07wmpv7orxwp" path="res://scripts/pause_menu.gd" id="1_n87rw"]
 [ext_resource type="Shader" uid="uid://dnbp7iqvmgbmw" path="res://shaders/pause_menu.gdshader" id="2_myx47"]
-[ext_resource type="PackedScene" uid="uid://be2kl1733ws56" path="res://scenes/settings.tscn" id="3_kukqi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kukqi"]
 shader = ExtResource("2_myx47")
@@ -196,11 +195,6 @@ text = "Quit"
 libraries = {
 &"": SubResource("AnimationLibrary_5d2l8")
 }
-
-[node name="settings" parent="." instance=ExtResource("3_kukqi")]
-visible = false
-modulate = Color(1, 1, 1, 0)
-layout_mode = 1
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
