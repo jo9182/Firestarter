@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://bnsth7cv4code" path="res://scripts/state_idle.gd" id="4_tuyoq"]
 [ext_resource type="Script" uid="uid://pgl5yx6pj3cx" path="res://scripts/state_walk.gd" id="5_fjrip"]
 [ext_resource type="Script" uid="uid://b1qqc6rdjs225" path="res://scripts/player_camera.gd" id="6_tuyoq"]
-[ext_resource type="Script" uid="uid://gbs87p44j1lw" path="res://scenes/player_host_interactions.gd" id="7_fjrip"]
+[ext_resource type="Script" uid="uid://gbs87p44j1lw" path="res://scenes/levelTransitions/player_host_interactions.gd" id="7_fjrip"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
 radius = 6.0
@@ -152,7 +152,7 @@ hframes = 6
 vframes = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(0, -8)
 shape = SubResource("CapsuleShape2D_onrkg")
 
 [node name="StateMachine" type="Node" parent="."]
