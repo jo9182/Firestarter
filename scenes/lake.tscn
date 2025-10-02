@@ -339,16 +339,16 @@ offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 
-[node name="LevelTransitions" parent="." instance=ExtResource("7_14mne")]
+[node name="LevelTransition" parent="." instance=ExtResource("7_14mne")]
 position = Vector2(335, 0)
-mylevel = "uid://bbd5loyuk8pvn"
+level = "uid://bbd5loyuk8pvn"
 target_transition_area = "LevelTransition2"
 size = 4
 side = 2
 
-[node name="LevelTransitions2" parent="." instance=ExtResource("7_14mne")]
+[node name="LevelTransition2" parent="." instance=ExtResource("7_14mne")]
 position = Vector2(672, 374)
-mylevel = "uid://dl7o6gueshnkp"
+level = "uid://dl7o6gueshnkp"
 target_transition_area = "LevelTransition2"
 size = 4
 side = 1

@@ -345,9 +345,9 @@ offset_top = 262.0
 offset_right = 579.0
 offset_bottom = 335.0
 
-[node name="LevelTransitions" parent="." instance=ExtResource("7_3bh4n")]
+[node name="LevelTransition" parent="." instance=ExtResource("7_3bh4n")]
 position = Vector2(0, 248)
-mylevel = "uid://cvwlg2gfeu7qi"
+level = "uid://cvwlg2gfeu7qi"
 target_transition_area = "LevelTransition3"
 size = 3
 

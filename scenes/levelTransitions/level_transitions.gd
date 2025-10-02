@@ -3,7 +3,7 @@ class_name level_transition extends Area2D
 
 enum SIDE {LEFT, RIGHT, TOP, BOTTOM}
 
-@export_file("*.tscn") var mylevel
+@export_file("*.tscn") var level
 @export var target_transition_area : String = "LevelTransition"
 
 @export_category("Collision Area Settings")
@@ -32,22 +32,25 @@ func _ready() -> void:
 		return
 		
 	#monitoring = false
-	body_entered.connect(_player_entered)
-	_place_player()
 	
+	_place_player()
+	body_entered.connect(_player_entered)
 	await global.level_loaded
+	
 	monitoring = true
 	
 	pass
 	
 func _player_entered(_p : Node2D) -> void:
-	global.load_new_level(mylevel, target_transition_area, get_offset())
+	global.load_new_level(level, target_transition_area, get_offset())
 	pass
 	
 func _place_player() -> void:
 	if name != global.target_transition:
+		
 		return
 	PlayerManager.set_player_position(global_position + global.position_offset)
+	print("It worked")
 	pass
 	
 func get_offset() -> Vector2:
@@ -55,33 +58,33 @@ func get_offset() -> Vector2:
 	var player_pos = PlayerManager.player.global_position
 	if side == SIDE.LEFT or side == SIDE.RIGHT:
 		offset.y = player_pos.y-global_position.y
-		offset.x = 8
+		offset.x = 16
 		if side == SIDE.LEFT:
 			offset.x *= -1
 	else:
 		offset.x = player_pos.x-global_position.x
-		offset.y = 8
+		offset.y = 16
 		if side == SIDE.TOP:
 			offset.y *= -1
 	
 	return offset
 
 func _update_area() -> void:
-	var new_rect : Vector2 = Vector2(16,16)
+	var new_rect : Vector2 = Vector2(32,32)
 	var new_position : Vector2 = Vector2.ZERO
 	
 	if side == SIDE.TOP:
 		new_rect.x *= size
-		new_position.y -= 8
+		new_position.y -= 16
 	elif side == SIDE.BOTTOM:
 		new_rect.x *= size
-		new_position.y += 8
+		new_position.y += 16
 	elif side == SIDE.LEFT:
 		new_rect.y *= size
-		new_position.x -= 8
+		new_position.x -= 16
 	elif side == SIDE.RIGHT:
 		new_rect.y *= size
-		new_position.x += 8
+		new_position.x += 16
 	
 	
 
@@ -92,5 +95,5 @@ func _update_area() -> void:
 
 
 func _snap_to_grid() -> void:
-	position.x = round(position.x / 8) * 8
-	position.x = round(position.y / 8) * 8
+	position.x = round(position.x / 16) * 16
+	position.x = round(position.y / 16) * 16
