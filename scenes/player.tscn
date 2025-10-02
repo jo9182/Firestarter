@@ -179,4 +179,5 @@ autoplay = "idle_down"
 script = ExtResource("7_fjrip")
 
 [node name="interactingComponent" parent="." instance=ExtResource("8_smehm")]
+visible = false
 position = Vector2(0, -8)
