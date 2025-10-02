@@ -254,21 +254,21 @@ offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 
-[node name="LevelTransitions" parent="." instance=ExtResource("7_e5buh")]
+[node name="LevelTransition" parent="." instance=ExtResource("7_e5buh")]
 position = Vector2(321, 0)
-mylevel = "uid://cvwlg2gfeu7qi"
+level = "uid://cvwlg2gfeu7qi"
 target_transition_area = "LevelTransition4"
 size = 5
 side = 2
 
-[node name="LevelTransitions2" parent="." instance=ExtResource("7_e5buh")]
+[node name="LevelTransition2" parent="." instance=ExtResource("7_e5buh")]
 position = Vector2(0, 231)
-mylevel = "uid://beblg114oqdk0"
+level = "uid://beblg114oqdk0"
 target_transition_area = "LevelTransition2"
 size = 4
 
-[node name="LevelTransitions3" parent="." instance=ExtResource("7_e5buh")]
+[node name="LevelTransition3" parent="." instance=ExtResource("7_e5buh")]
 position = Vector2(307, 449)
-mylevel = "uid://cdav8ffl2te8y"
+level = "uid://cdav8ffl2te8y"
 size = 6
 side = 3

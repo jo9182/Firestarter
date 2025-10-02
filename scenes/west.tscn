@@ -255,15 +255,15 @@ offset_right = 35.0
 offset_bottom = -10.0
 metadata/_edit_use_anchors_ = true
 
-[node name="LevelTransitions" parent="." instance=ExtResource("6_k36td")]
+[node name="LevelTransition" parent="." instance=ExtResource("6_k36td")]
 position = Vector2(608, 185)
-mylevel = "uid://cvwlg2gfeu7qi"
+level = "uid://cvwlg2gfeu7qi"
 target_transition_area = "LevelTransition2"
 size = 5
 side = 1
 
-[node name="LevelTransitions2" parent="." instance=ExtResource("6_k36td")]
+[node name="LevelTransition2" parent="." instance=ExtResource("6_k36td")]
 position = Vector2(339, 400)
-mylevel = "uid://beblg114oqdk0"
+level = "uid://beblg114oqdk0"
 size = 3
 side = 3

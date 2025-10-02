@@ -174,27 +174,27 @@ offset_bottom = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
 polygon = PackedVector2Array(2, -47, 353, -47, 353, -67, 418, -67, 418, -47, 656, -47, 656, 53.2108, 663, 52, 663, 110, 656, 108.967, 656, 161, 379.229, 161, 379, 167, 340, 167, 339.84, 161, 0, 161, 0, 28.4923, -5, 26, 0, -49, -22, 180, 712, 179, 686, -84, 446, -79, 405, -121)
 
-[node name="LevelTransitions" parent="." instance=ExtResource("8_4mrxx")]
+[node name="LevelTransition" parent="." instance=ExtResource("8_4mrxx")]
 process_mode = 3
 position = Vector2(386, -47)
-mylevel = "uid://dm7bv1511cala"
+level = "uid://dm7bv1511cala"
 size = 4
 side = 2
 
-[node name="LevelTransitions2" parent="." instance=ExtResource("8_4mrxx")]
+[node name="LevelTransition2" parent="." instance=ExtResource("8_4mrxx")]
 z_index = 3
 position = Vector2(0, -6)
-mylevel = "uid://bbd5loyuk8pvn"
+level = "uid://bbd5loyuk8pvn"
 size = 5
 
-[node name="LevelTransitions3" parent="." instance=ExtResource("8_4mrxx")]
+[node name="LevelTransition3" parent="." instance=ExtResource("8_4mrxx")]
 position = Vector2(657, 80)
-mylevel = "uid://cnrdghpgdh6n"
+level = "uid://cnrdghpgdh6n"
 size = 4
 side = 1
 
-[node name="LevelTransitions4" parent="." instance=ExtResource("8_4mrxx")]
+[node name="LevelTransition4" parent="." instance=ExtResource("8_4mrxx")]
 position = Vector2(356, 161)
-mylevel = "uid://dl7o6gueshnkp"
+level = "uid://dl7o6gueshnkp"
 size = 3
 side = 3

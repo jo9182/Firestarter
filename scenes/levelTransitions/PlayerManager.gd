@@ -15,6 +15,7 @@ func _ready() -> void:
 	#add_child(player)
 
 func set_player_position(  _new_pos : Vector2) -> void:
+	print("failure of my own creation")
 	player.global_position = _new_pos
 	pass
 	

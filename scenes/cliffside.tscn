@@ -604,7 +604,7 @@ offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 
-[node name="LevelTransitions" parent="." instance=ExtResource("8_q1f6m")]
+[node name="LevelTransition" parent="." instance=ExtResource("8_q1f6m")]
 position = Vector2(153, 168)
-mylevel = "uid://cvwlg2gfeu7qi"
+level = "uid://cvwlg2gfeu7qi"
 side = 3
