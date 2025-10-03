@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="7_wsohc"]
 [ext_resource type="PackedScene" uid="uid://c2nfodrjf8ejq" path="res://scenes/pause_menu.tscn" id="10_lc7dt"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uc0vf"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lc7dt"]
 texture = ExtResource("1_f0ang")
 1:0/0 = 0
 1:1/0 = 0
@@ -66,11 +66,11 @@ texture = ExtResource("1_f0ang")
 0:1/0 = 0
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yn7bc"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gjlku"]
 texture = ExtResource("2_kc0ln")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3bh4n"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sie0v"]
 texture = ExtResource("3_uc0vf")
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
@@ -110,7 +110,7 @@ texture = ExtResource("3_uc0vf")
 6:7/0/y_sort_origin = 9
 6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.0198, 4.77946, 2.23042, 5.09809, 14.3384, 4.77946, 10.8334, 14.657, -10.1962, 14.657, -14.657, 9.24029)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wotjt"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cdgfh"]
 texture = ExtResource("5_uc0vf")
 0:0/0 = 0
 1:0/0 = 0
@@ -196,12 +196,12 @@ texture = ExtResource("5_uc0vf")
 
 [sub_resource type="TileSet" id="TileSet_wsohc"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_uc0vf")
-sources/1 = SubResource("TileSetAtlasSource_yn7bc")
-sources/2 = SubResource("TileSetAtlasSource_3bh4n")
-sources/3 = SubResource("TileSetAtlasSource_wotjt")
+sources/0 = SubResource("TileSetAtlasSource_lc7dt")
+sources/1 = SubResource("TileSetAtlasSource_gjlku")
+sources/2 = SubResource("TileSetAtlasSource_sie0v")
+sources/3 = SubResource("TileSetAtlasSource_cdgfh")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wsohc"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_byiah"]
 texture = ExtResource("1_f0ang")
 1:0/0 = 0
 1:1/0 = 0
@@ -256,11 +256,11 @@ texture = ExtResource("1_f0ang")
 0:1/0 = 0
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lc7dt"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pswn5"]
 texture = ExtResource("2_kc0ln")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gjlku"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bc1d5"]
 texture = ExtResource("3_uc0vf")
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
@@ -302,9 +302,9 @@ texture = ExtResource("3_uc0vf")
 
 [sub_resource type="TileSet" id="TileSet_gjlku"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_wsohc")
-sources/1 = SubResource("TileSetAtlasSource_lc7dt")
-sources/2 = SubResource("TileSetAtlasSource_gjlku")
+sources/0 = SubResource("TileSetAtlasSource_byiah")
+sources/1 = SubResource("TileSetAtlasSource_pswn5")
+sources/2 = SubResource("TileSetAtlasSource_bc1d5")
 
 [node name="River" type="Node2D"]
 y_sort_enabled = true
