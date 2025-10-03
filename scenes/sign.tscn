@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxlkvnj3m77rp"]
+[gd_scene load_steps=6 format=3 uid="uid://dxlkvnj3m77rp"]
 
 [ext_resource type="Script" uid="uid://dxd3vxeqm337l" path="res://scripts/sign.gd" id="1_8yyji"]
 [ext_resource type="Texture2D" uid="uid://c5ujchac7f61p" path="res://sprites/objects/objects.png" id="2_ge2pc"]
@@ -7,19 +7,23 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8yyji"]
 size = Vector2(14, 7)
 
-[node name="SIGN" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_8yyji"]
+radius = 20.0
+
+[node name="SIGN" type="StaticBody2D"]
 script = ExtResource("1_8yyji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_8yyji")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_ge2pc")
 hframes = 16
 vframes = 13
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, 1.5)
-shape = SubResource("RectangleShape2D_8yyji")
-
 [node name="interactable" parent="." instance=ExtResource("3_qkam6")]
 interact_name = "Sign"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable"]
+shape = SubResource("CircleShape2D_8yyji")

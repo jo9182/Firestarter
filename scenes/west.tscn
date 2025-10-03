@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dfo6m0aoebnaw" path="res://scenes/levelTransitions/Level_transitions.tscn" id="6_k36td"]
 [ext_resource type="PackedScene" uid="uid://cvv1o6epkfaqo" path="res://scenes/player.tscn" id="7_rvuxb"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v6ax4"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e40wx"]
 texture = ExtResource("2_k36td")
 1:0/0 = 0
 1:1/0 = 0
@@ -64,11 +64,11 @@ texture = ExtResource("2_k36td")
 0:1/0 = 0
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pihms"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d2k5j"]
 texture = ExtResource("3_rvuxb")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gae4m"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v6ax4"]
 texture = ExtResource("4_e40wx")
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
@@ -110,11 +110,11 @@ texture = ExtResource("4_e40wx")
 
 [sub_resource type="TileSet" id="TileSet_xlb5w"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_v6ax4")
-sources/1 = SubResource("TileSetAtlasSource_pihms")
-sources/2 = SubResource("TileSetAtlasSource_gae4m")
+sources/0 = SubResource("TileSetAtlasSource_e40wx")
+sources/1 = SubResource("TileSetAtlasSource_d2k5j")
+sources/2 = SubResource("TileSetAtlasSource_v6ax4")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wsuuc"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pihms"]
 texture = ExtResource("2_k36td")
 1:0/0 = 0
 1:1/0 = 0
@@ -169,11 +169,11 @@ texture = ExtResource("2_k36td")
 0:1/0 = 0
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b0rdm"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gae4m"]
 texture = ExtResource("3_rvuxb")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_apngc"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xlb5w"]
 texture = ExtResource("4_e40wx")
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
@@ -215,9 +215,9 @@ texture = ExtResource("4_e40wx")
 
 [sub_resource type="TileSet" id="TileSet_i1i27"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_wsuuc")
-sources/1 = SubResource("TileSetAtlasSource_b0rdm")
-sources/2 = SubResource("TileSetAtlasSource_apngc")
+sources/0 = SubResource("TileSetAtlasSource_pihms")
+sources/1 = SubResource("TileSetAtlasSource_gae4m")
+sources/2 = SubResource("TileSetAtlasSource_xlb5w")
 
 [node name="West" type="Node2D"]
 y_sort_enabled = true
@@ -234,17 +234,17 @@ tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAAIAAQAAAAA
 tile_set = SubResource("TileSet_xlb5w")
 script = ExtResource("4_d2k5j")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(0, 1, 0, 400, 323.111, 400, 324, 409, 362, 410, 362.501, 400, 608, 400, 608, 220.687, 623, 220, 617, 149, 608, 148.995, 608, 0, 0, 0, 640, -29, 632, 435, -26, 412)
-
 [node name="ysort" type="TileMapLayer" parent="."]
 z_index = 2
 y_sort_enabled = true
 use_parent_material = true
 tile_map_data = PackedByteArray("AAABABIAAgAAAAUAAAACAAoAAgAAAAUAAAACAAMAAgAAAAUAAAALAAEAAgAAAAUAAAAMAAcAAgAAAAUAAAAJAAwAAgAAAAUAAAAPABAAAgAAAAUAAAAQAAsAAgAAAAUAAAAWABAAAgAAAAUAAAAaAA4AAgAAAAUAAAAWAAsAAgAAAAUAAAAaAAgAAgAAAAUAAAAaAAEAAgAAAAUAAAAgABcAAgAGAAcAAAAiABMAAgAGAAcAAAAkAA8AAgAGAAcAAAAhAAcAAgAGAAcAAAAeAAIAAgAGAAcAAAAWAAIAAgAGAAcAAAASABcAAgAGAAcAAAAaABcAAgAKAAcAAAAfABIAAgAKAAcAAAAjAAQAAgAKAAcAAAAYAAAAAgAKAAcAAAAJAAgAAgAKAAcAAAARAAkAAgAKAAcAAAAOAA4AAgAKAAcAAAABABYAAgAKAAcAAAACABUAAgAAAAAAAAAYABcAAgAIAAYAAAAMABcAAgAKAAcAAAAUAAEAAgAIAAYAAAAOAAEAAgAIAAYAAAAAAAQAAgAIAAYAAAACAAgAAgAIAAYAAAAAAAkAAgAIAAYAAAABAA0AAgAIAAYAAAADAA0AAgAIAAYAAAAHABcAAgAAAAEAAAAUABAAAgAAAAEAAAALAAsAAgAAAAEAAAAWAAkAAgAAAAEAAAAGAAEAAgAAAAEAAAANAAMAAgAAAAEAAAAfAAEAAgAAAAEAAAAjABYAAgAAAAEAAAAXAA4AAgAGAAcAAAATAAgAAgAGAAcAAAATAA0AAgAGAAcAAAALABAAAgAGAAcAAAA=")
 tile_set = SubResource("TileSet_i1i27")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 1, 0, 400, 323.111, 400, 324, 409, 362, 410, 362.501, 400, 608, 400, 608, 220.687, 623, 220, 617, 149, 608, 148.995, 608, 0, 0, 0, 640, -29, 632, 435, -26, 412)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

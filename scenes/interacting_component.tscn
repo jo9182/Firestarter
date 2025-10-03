@@ -10,6 +10,7 @@ outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
 [node name="interactingComponent" type="Node2D"]
+z_index = 5
 script = ExtResource("1_ofc3v")
 
 [node name="interactRange" type="Area2D" parent="."]

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dfo6m0aoebnaw" path="res://scenes/levelTransitions/Level_transitions.tscn" id="8_q1f6m"]
 [ext_resource type="PackedScene" uid="uid://cvv1o6epkfaqo" path="res://scenes/player.tscn" id="9_uihar"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjun4"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uihar"]
 texture = ExtResource("2_o3jk3")
 1:0/0 = 0
 1:1/0 = 0
@@ -65,11 +65,11 @@ texture = ExtResource("2_o3jk3")
 0:1/0 = 0
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ffx"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aavie"]
 texture = ExtResource("3_b88vm")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qr2o7"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ffgjc"]
 texture = ExtResource("4_q1f6m")
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
@@ -111,11 +111,11 @@ texture = ExtResource("4_q1f6m")
 
 [sub_resource type="TileSet" id="TileSet_53un3"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_hjun4")
-sources/1 = SubResource("TileSetAtlasSource_k1ffx")
-sources/2 = SubResource("TileSetAtlasSource_qr2o7")
+sources/0 = SubResource("TileSetAtlasSource_uihar")
+sources/1 = SubResource("TileSetAtlasSource_aavie")
+sources/2 = SubResource("TileSetAtlasSource_ffgjc")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ct4m"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2t5v"]
 texture = ExtResource("2_o3jk3")
 1:0/0 = 0
 1:1/0 = 0
@@ -176,11 +176,11 @@ texture = ExtResource("2_o3jk3")
 0:1/0 = 0
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8t3wa"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v51np"]
 texture = ExtResource("3_b88vm")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i0aq1"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fp488"]
 texture = ExtResource("4_q1f6m")
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
@@ -220,7 +220,7 @@ texture = ExtResource("4_q1f6m")
 6:7/0/y_sort_origin = 9
 6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.0198, 4.77946, 2.23042, 5.09809, 14.3384, 4.77946, 10.8334, 14.657, -10.1962, 14.657, -14.657, 9.24029)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q1f6m"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60kbb"]
 texture = ExtResource("6_b88vm")
 0:0/0 = 0
 1:0/0 = 0
@@ -564,10 +564,10 @@ texture = ExtResource("6_b88vm")
 
 [sub_resource type="TileSet" id="TileSet_hjun4"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_0ct4m")
-sources/1 = SubResource("TileSetAtlasSource_8t3wa")
-sources/2 = SubResource("TileSetAtlasSource_i0aq1")
-sources/3 = SubResource("TileSetAtlasSource_q1f6m")
+sources/0 = SubResource("TileSetAtlasSource_e2t5v")
+sources/1 = SubResource("TileSetAtlasSource_v51np")
+sources/2 = SubResource("TileSetAtlasSource_fp488")
+sources/3 = SubResource("TileSetAtlasSource_60kbb")
 
 [node name="cliffside" type="Node2D"]
 y_sort_enabled = true
