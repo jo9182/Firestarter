@@ -50,7 +50,7 @@ func _place_player() -> void:
 		
 		return
 	PlayerManager.set_player_position(global_position + global.position_offset)
-	print("It worked")
+	
 	pass
 	
 func get_offset() -> Vector2:
