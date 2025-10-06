@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dl7o6gueshnkp"]
+[gd_scene load_steps=18 format=4 uid="uid://dl7o6gueshnkp"]
 
 [ext_resource type="PackedScene" uid="uid://cvv1o6epkfaqo" path="res://scenes/player.tscn" id="1_7345j"]
 [ext_resource type="Script" uid="uid://dykn4t10pnxt" path="res://scenes/levelTransitions/level.gd" id="1_e5buh"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="6_8lxxj"]
 [ext_resource type="PackedScene" uid="uid://dfo6m0aoebnaw" path="res://scenes/levelTransitions/Level_transitions.tscn" id="7_e5buh"]
 [ext_resource type="PackedScene" uid="uid://c2nfodrjf8ejq" path="res://scenes/pause_menu.tscn" id="7_x47lj"]
+[ext_resource type="PackedScene" uid="uid://dxlkvnj3m77rp" path="res://scenes/sign.tscn" id="9_sepv8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x47lj"]
 texture = ExtResource("2_ad8ug")
@@ -272,3 +273,6 @@ position = Vector2(307, 449)
 level = "uid://cdav8ffl2te8y"
 size = 6
 side = 3
+
+[node name="SIGN" parent="." instance=ExtResource("9_sepv8")]
+position = Vector2(88, 296)

@@ -6,9 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://bka7dakj81ko5" path="res://sprites/tilesets/grass.png" id="2_kc0ln"]
 [ext_resource type="Texture2D" uid="uid://c5ujchac7f61p" path="res://sprites/objects/objects.png" id="3_uc0vf"]
 [ext_resource type="Texture2D" uid="uid://bjobqh3fvi283" path="res://sprites/tilesets/topdown.png" id="5_uc0vf"]
-[ext_resource type="PackedScene" uid="uid://oifduakdxlv7" path="res://scenes/river_text.tscn" id="6_yn7bc"]
 [ext_resource type="PackedScene" uid="uid://dfo6m0aoebnaw" path="res://scenes/levelTransitions/Level_transitions.tscn" id="7_3bh4n"]
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="7_wsohc"]
+[ext_resource type="PackedScene" uid="uid://dxlkvnj3m77rp" path="res://scenes/sign.tscn" id="10_gjlku"]
 [ext_resource type="PackedScene" uid="uid://c2nfodrjf8ejq" path="res://scenes/pause_menu.tscn" id="10_lc7dt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lc7dt"]
@@ -332,19 +332,6 @@ tile_set = SubResource("TileSet_gjlku")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(0, 1, 0, 224, -11, 224, -11, 272, 0, 272, 0, 480, 672, 480, 672, 0, 0, 0, 745, -50, 746, 565, -46, 541)
 
-[node name="RiverButton" type="Button" parent="."]
-offset_left = 593.0
-offset_top = 209.0
-offset_right = 607.0
-offset_bottom = 222.0
-toggle_mode = true
-
-[node name="RiverText" parent="." instance=ExtResource("6_yn7bc")]
-offset_left = 240.0
-offset_top = 262.0
-offset_right = 579.0
-offset_bottom = 335.0
-
 [node name="LevelTransition" parent="." instance=ExtResource("7_3bh4n")]
 position = Vector2(0, 248)
 level = "uid://cvwlg2gfeu7qi"
@@ -359,3 +346,6 @@ offset_left = 0.0
 offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
+
+[node name="SIGN" parent="." instance=ExtResource("10_gjlku")]
+position = Vector2(600, 216)

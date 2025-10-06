@@ -7,7 +7,7 @@ var current_tilemap_bounds : Array[ Vector2 ]
 signal TileMapBoundsChanged( bounds : Array [ Vector2 ])
 var target_transition : String
 var position_offset : Vector2
-
+var myScene : String = "world"
 
 func _ready() -> void:
 	await get_tree().process_frame
@@ -46,3 +46,9 @@ func load_new_level(
 	level_loaded.emit()
 	
 	pass
+	
+	
+func currentScene(current : String) -> String:
+	myScene = current
+	print(myScene)
+	return myScene
