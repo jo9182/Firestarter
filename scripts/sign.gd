@@ -20,6 +20,14 @@ func _on_interact():
 		print("67676767")
 	elif global.currentScene(get_tree().get_current_scene().get_name()) == "world":
 		print("CAMP")
+	elif global.currentScene(get_tree().get_current_scene().get_name()) == "Woodland":
+		print("wood")
+	elif global.currentScene(get_tree().get_current_scene().get_name()) == "cliffside":
+		print("cliff")
+	elif global.currentScene(get_tree().get_current_scene().get_name()) == "West":
+		print("west")
+	elif global.currentScene(get_tree().get_current_scene().get_name()) == "Deep Woods":
+		print("HOW DEEP")
 	else:
 		print("WHY DO I TRY")
 	
