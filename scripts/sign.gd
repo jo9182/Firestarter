@@ -28,7 +28,8 @@ func _on_interact():
 		var cliffsidepop = load("res://scenes/popups/cliffside_pop.tscn").instantiate()
 		get_tree().current_scene.add_child(cliffsidepop)
 	elif global.currentScene(get_tree().get_current_scene().get_name()) == "West":
-		print("west")
+		var westpop = load("res://scenes/popups/west_pop.tscn").instantiate()
+		get_tree().current_scene.add_child(westpop)
 	elif global.currentScene(get_tree().get_current_scene().get_name()) == "Deep Woods":
 		print("HOW DEEP")
 	else:
