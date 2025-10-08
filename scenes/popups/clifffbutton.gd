@@ -1,0 +1,1 @@
+class_name cliff_button extends Button
