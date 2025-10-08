@@ -18,7 +18,7 @@ func _on_interact():
 		print("The Player gained 6-7 things!")
 		
 	if global.currentScene(get_tree().get_current_scene().get_name()) == "River":
-		var riverpop = load("res://scenes/popups/cliffside_pop.tscn").instantiate()
+		var riverpop = load("res://scenes/popups/river_pop.tscn").instantiate()
 		get_tree().current_scene.add_child(riverpop)
 	elif global.currentScene(get_tree().get_current_scene().get_name()) == "world":
 		print("CAMP")

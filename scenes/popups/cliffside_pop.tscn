@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://00vdw4hk066k"]
 
-[ext_resource type="Script" uid="uid://brhd770370ivp" path="res://scripts/settings.gd" id="1_ivxc1"]
+[ext_resource type="Script" uid="uid://d2j7vjdjhovn5" path="res://scenes/popups/cliffside_pop.gd" id="1_8f5j7"]
 [ext_resource type="Script" uid="uid://b1givql6054oe" path="res://scenes/popups/clifffbutton.gd" id="2_8f5j7"]
 
 [node name="Cliffside_pop" type="Control"]
@@ -11,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ivxc1")
+script = ExtResource("1_8f5j7")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_priority = 1
