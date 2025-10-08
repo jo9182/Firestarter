@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1759941801
+::res://::1759945200
 icon.svg::CompressedTexture2D/CompressedTexture2D::4408965281071173183::1758648294::1758648294::1::::<><><>0<>0<>3247f9d847c96e4ecb3fda811f925f05<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://scenes/::1759860448
-cliffside.tscn::PackedScene::8067687894697754854::1759860448::0::1::::<><><>0<>0<><>::uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://dgjwpdmh6tn10::::res://sprites/alt tilesets/Wall_Variations.png<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
-deep_woods.tscn::PackedScene::4984742157224652658::1759860448::0::1::::<><><>0<>0<><>::uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
+::res://scenes/::1759943240
+cliffside.tscn::PackedScene/PackedScene::8067687894697754854::1759860448::0::1::::<><><>0<>0<><>::uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://dgjwpdmh6tn10::::res://sprites/alt tilesets/Wall_Variations.png<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
+deep_woods.tscn::PackedScene/PackedScene::4984742157224652658::1759860448::0::1::::<><><>0<>0<><>::uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
 interactable.tscn::PackedScene/PackedScene::5295344990580900428::1759771487::0::1::::<><><>0<>0<><>::uid://bbgat8wjckvb1::::res://scripts/interactable.gd
 interacting_component.tscn::PackedScene/PackedScene::7665794399209503757::1759771487::0::1::::<><><>0<>0<><>::uid://rj5eus1aj52l::::res://scripts/interacting_component.gd
 lake.tscn::PackedScene/PackedScene::2669920444792138105::1759771487::0::1::::<><><>0<>0<><>::uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://bjobqh3fvi283::::res://sprites/tilesets/topdown.png<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd
@@ -14,7 +14,7 @@ river.tscn::PackedScene/PackedScene::168252470980994655::1759774986::0::1::::<><
 river_text.tscn::PackedScene/PackedScene::999468826236762174::1759771487::0::1::::<><><>0<>0<><>::uid://eqeyomrikqv1::::res://scripts/river_text.gd
 settings.tscn::PackedScene/PackedScene::2723542487616803923::1759771487::0::1::::<><><>0<>0<><>::uid://brhd770370ivp::::res://scripts/settings.gd
 sign.tscn::PackedScene/PackedScene::8796958979644687825::1759771488::0::1::::<><><>0<>0<><>::uid://dxd3vxeqm337l::::res://scripts/sign.gd<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://chpds8o2sjf05::::res://scenes/interactable.tscn
-west.tscn::PackedScene::2464644587434855483::1759860448::0::1::::<><><>0<>0<><>::uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
+west.tscn::PackedScene/PackedScene::2464644587434855483::1759860448::0::1::::<><><>0<>0<><>::uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
 woodland.tscn::PackedScene/PackedScene::7998305162979629935::1759774986::0::1::::<><><>0<>0<><>::uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
 world.tscn::PackedScene/PackedScene::6292903423690684200::1759771487::0::1::::<><><>0<>0<><>::uid://dykn4t10pnxt::::res://scenes/levelTransitions/level.gd<>uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://dev3p1q6jsyux::::res://sprites/objects/BlueTent.png<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd<>uid://c2nfodrjf8ejq::::res://scenes/pause_menu.tscn<>uid://dfo6m0aoebnaw::::res://scenes/levelTransitions/Level_transitions.tscn<>uid://cvv1o6epkfaqo::::res://scenes/player.tscn<>uid://dxlkvnj3m77rp::::res://scenes/sign.tscn
 ::res://scenes/levelTransitions/::1759774986
@@ -27,7 +27,14 @@ player_spawn.gd::GDScript/GDScript::1575377948263771421::1759165784::0::1::::<>N
 player_spawn.tscn::PackedScene/PackedScene::8799856316350274642::1759165784::0::1::::<><><>0<>0<><>::uid://ornyegg68xn0::::res://sprites/characters/player.png<>uid://wpeik2ok47px::::res://scenes/levelTransitions/player_spawn.gd
 SceneTransitions.tscn::PackedScene/PackedScene::3641103370455282734::1759165784::0::1::::<><><>0<>0<><>::uid://cp8xnbm64ogve::::res://scenes/levelTransitions/scene_transitions.gd
 scene_transitions.gd::GDScript/GDScript::5895218266503865734::1759165784::0::1::::<>CanvasLayer<><>0<>0<><>::
-::res://scripts/::1759860448
+::res://scenes/popups/::1759944574
+clifffbutton.gd::GDScript/GDScript::4224240981230006772::1759943240::0::1::::cliff_button<>Button<><>0<>0<><>::
+cliffside_pop.gd::GDScript/GDScript::-1::1759944574::0::1::::<>Control<><>0<>0<><>::
+cliffside_pop.tscn::PackedScene/PackedScene::1807612149677576492::1759944574::0::1::::<><><>0<>0<><>::uid://brhd770370ivp::::res://scripts/settings.gd<>uid://b1givql6054oe::::res://scenes/popups/clifffbutton.gd
+minesweeper.tscn::PackedScene/PackedScene::6583118176614878815::1759943240::0::1::::<><><>0<>0<><>::uid://cnhiwk3fh2mts::::res://sprites/tilesets/plains.png<>uid://bka7dakj81ko5::::res://sprites/tilesets/grass.png<>uid://c5ujchac7f61p::::res://sprites/objects/objects.png<>uid://bjobqh3fvi283::::res://sprites/tilesets/topdown.png<>uid://pod3ftf5n8lf::::res://scripts/leveltilemap.gd
+river_pop.gd::GDScript/GDScript::-1::1759944574::0::1::::<>Control<><>0<>0<><>::
+river_pop.tscn::PackedScene/PackedScene::672402583306923802::1759944574::0::1::::<><><>0<>0<><>::uid://brhd770370ivp::::res://scripts/settings.gd
+::res://scripts/::1759944574
 cliffside.gd::GDScript/GDScript::3331320050875600945::1758648294::0::1::::<>Node2D<><>0<>0<><>::
 global.gd::GDScript/GDScript::4626912151735352607::1759774986::0::1::::<>Node<><>0<>0<><>::
 interactable.gd::GDScript/GDScript::2469031491607945888::1759354414::0::1::::<>Area2D<><>0<>0<><>::
@@ -39,8 +46,8 @@ player.gd::GDScript/GDScript::5221166008627488255::1759165784::0::1::::Player<>C
 player_camera.gd::GDScript/GDScript::4245337360453575136::1759165784::0::1::::player_Camera<>Camera2D<><>0<>0<><>::
 player_state_machine.gd::GDScript/GDScript::480762113392106430::1759165784::0::1::::PlayerStateMachine<>Node<><>0<>0<><>::
 river_text.gd::GDScript/GDScript::314071900289929492::1759428903::0::1::::riverText<>TextEdit<><>0<>0<><>::
-settings.gd::GDScript/GDScript::3594322686884588289::1759253710::0::1::::<>Control<><>0<>0<><>::
-sign.gd::GDScript::8781537380446098907::1759860448::0::1::::Sign<>Node2D<><>0<>0<><>::
+settings.gd::GDScript::3594322686884588289::1759943240::0::1::::<>Control<><>0<>0<><>::
+sign.gd::GDScript::8781537380446098907::1759944574::0::1::::Sign<>Node2D<><>0<>0<><>::
 state.gd::GDScript/GDScript::1603694904273667991::1759165784::0::1::::State<>Node<><>0<>0<><>::
 state_idle.gd::GDScript/GDScript::3337202258810301090::1759165784::0::1::::State_Idle<>State<><>0<>0<><>::
 state_walk.gd::GDScript/GDScript::1065941679352256803::1759165785::0::1::::State_walk<>State<><>0<>0<><>::
@@ -48,7 +55,7 @@ woodland.gd::GDScript/GDScript::1194406502477669587::1758648294::0::1::::<>Node2
 world.gd::GDScript/GDScript::5501441509722470404::1758648294::0::1::::<>Node2D<><>0<>0<><>::
 ::res://shaders/::1758648294
 pause_menu.gdshader::Shader/Shader::8074749742298326722::1758648294::0::1::::<><><>0<>0<><>::
-::res://sprites/::1758737060
+::res://sprites/::1759944574
 ::res://sprites/alt tilesets/::1759252464
 Dungeon_Tiles.png::CompressedTexture2D/CompressedTexture2D::5852005335333960046::1758737070::1758737070::1::::<><><>0<>0<>d76b731572fdf65e18cbc2934e3af169<>res://.godot/imported/Dungeon_Tiles.png-c8bacae8b750b11ec16083337e26230d.ctex::
 Floors_Tiles.png::CompressedTexture2D/CompressedTexture2D::2140692747263859852::1758737070::1758737070::1::::<><><>0<>0<>1ebd3aa0a697214e3bd87e7da11c1526<>res://.godot/imported/Floors_Tiles.png-69f0df1f77967b8a8447bf0ba24b5f24.ctex::
@@ -61,6 +68,10 @@ README.txt::TextFile/TextFile::-1::1758648294::0::1::::<><><>0<>0<><>::
 skeleton.png::CompressedTexture2D/CompressedTexture2D::1913152795811855339::1758648294::1758648348::1::::<><><>0<>0<>b70a9a18d7c80de1605cca4a8b3c8dcd<>res://.godot/imported/skeleton.png-4c319e64f44bbfbe8543bad185bd5e02.ctex::
 skeleton_swordless.png::CompressedTexture2D/CompressedTexture2D::4474209796728498839::1758648294::1758648348::1::::<><><>0<>0<>cd590ff6b977f1ead301044f19e71716<>res://.godot/imported/skeleton_swordless.png-406e26d61b1b0ae097624f5745bee7c6.ctex::
 slime.png::CompressedTexture2D/CompressedTexture2D::3978265264402055807::1758648294::1758648348::1::::<><><>0<>0<>511167c1beff204f8edf1c5a192c95c9<>res://.godot/imported/slime.png-8277796ac512ec1a17686142e70e5878.ctex::
+::res://sprites/font/::1759944665
+Abaddon Bold.ttf::FontFile/FontFile::2887933768046593190::1759944574::1759944577::1::::<><><>0<>0<>21a3309428212b8ecba896b545d2fe29<>res://.godot/imported/Abaddon Bold.ttf-e1b33209ba5f8787588ae235f1e13859.fontdata::
+Abaddon Light.ttf::FontFile/FontFile::1915629224362192863::1759944574::1759944577::1::::<><><>0<>0<>28c7eb70834039b965be3f90c2ee09b6<>res://.godot/imported/Abaddon Light.ttf-8841eae46be55bbf05d355f954ae2293.fontdata::
+PixelOperator8-Bold.ttf::FontFile/FontFile::1855625474577324749::1709866750::1759944665::1::::<><><>0<>0<>02edc18a0a0197e1925b084da7bbde2e<>res://.godot/imported/PixelOperator8-Bold.ttf-23ef9994bb8f064c51f4183108e9af77.fontdata::
 ::res://sprites/objects/::1758649704
 BlueTent.png::CompressedTexture2D/CompressedTexture2D::7485097612917957919::1758649704::1758649704::1::::<><><>0<>0<>a1c4d133dbbc3ee6453b16c5421bd187<>res://.godot/imported/BlueTent.png-5c319afa32bd297d45b6be122d34cc23.ctex::
 chest_01.png::CompressedTexture2D/CompressedTexture2D::4786462373924172551::1758648294::1758648348::1::::<><><>0<>0<>aeee4a7999bdb7aa8b2c11f1978da6e8<>res://.godot/imported/chest_01.png-d51a830b387e6d6a48324ae1f723ab1c.ctex::
