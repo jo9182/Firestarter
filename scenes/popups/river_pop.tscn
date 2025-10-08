@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://jtymwngltuac"]
 
-[ext_resource type="Script" uid="uid://ckkhtsh2m3fs0" path="res://scenes/popups/river_pop.gd" id="1_dt4h8"]
+[ext_resource type="Script" path="res://scenes/popups/river_pop.gd" id="1_dt4h8"]
 [ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_kf4i2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_dt4h8"]
