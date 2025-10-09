@@ -1,5 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dkt5x5cw0xn22"]
 
+<<<<<<< HEAD:scenes/popups/woods game/woods_pop.tscn
+[ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_rcht0"]
+[ext_resource type="Script" uid="uid://b1givql6054oe" path="res://scenes/popups/clifffbutton.gd" id="2_wvhwy"]
+=======
 [ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_bi6rc"]
 [ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_bi6rc"]
 
@@ -10,6 +14,7 @@ font_size = 28
 [sub_resource type="LabelSettings" id="LabelSettings_hmf1t"]
 font = ExtResource("2_bi6rc")
 font_size = 24
+>>>>>>> ef0754f5fc29bed4ccd21c7c424e87fcd54349d2:scenes/popups/woods_pop.tscn
 
 [node name="woods_pop" type="Control"]
 z_index = 20
@@ -19,7 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_bi6rc")
+script = ExtResource("1_rcht0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_priority = 1
@@ -77,5 +82,34 @@ offset_right = 781.0
 offset_bottom = 269.0
 text = "X"
 
+<<<<<<< HEAD:scenes/popups/woods game/woods_pop.tscn
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+z_index = 3
+offset_left = 391.0
+offset_top = 272.0
+offset_right = 953.0
+offset_bottom = 370.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="volLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Red and Green QTE"
+
+[node name="volLabel2" type="Label" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_direction = 2
+layout_mode = 2
+text = "You must break sticks by clicking when the line is on the green bar to get the sticks you need."
+autowrap_mode = 3
+
+[node name="start" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Start
+"
+script = ExtResource("2_wvhwy")
+
+=======
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/collect" to="." method="_on_collect_pressed"]
+>>>>>>> ef0754f5fc29bed4ccd21c7c424e87fcd54349d2:scenes/popups/woods_pop.tscn
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

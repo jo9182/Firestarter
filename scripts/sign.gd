@@ -24,7 +24,7 @@ func _on_interact():
 		var camppop = load("res://scenes/popups/camp_pop.tscn").instantiate()
 		get_tree().current_scene.add_child(camppop)
 	elif global.currentScene(get_tree().get_current_scene().get_name()) == "Woodland":
-		var woodspop = load("res://scenes/popups/woods_pop.tscn").instantiate()
+		var woodspop = load("res://scenes/popups/woods game/woods_pop.tscn").instantiate()
 		get_tree().current_scene.add_child(woodspop)
 	elif global.currentScene(get_tree().get_current_scene().get_name()) == "cliffside":
 		var cliffsidepop = load("res://scenes/popups/cliffside_pop.tscn").instantiate()
