@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkt5x5cw0xn22"]
 
-[ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_bi6rc"]
-[ext_resource type="Script" uid="uid://b1givql6054oe" path="res://scenes/popups/clifffbutton.gd" id="2_la7gn"]
+[ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_rcht0"]
+[ext_resource type="Script" uid="uid://b1givql6054oe" path="res://scenes/popups/clifffbutton.gd" id="2_wvhwy"]
 
 [node name="woods_pop" type="Control"]
 z_index = 20
@@ -11,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_bi6rc")
+script = ExtResource("1_rcht0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_priority = 1
@@ -59,7 +59,7 @@ autowrap_mode = 3
 layout_mode = 2
 text = "Start
 "
-script = ExtResource("2_la7gn")
+script = ExtResource("2_wvhwy")
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/start" to="." method="_on_start_pressed"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://c5hmc8od6bsij"]
 
-[ext_resource type="Script" path="res://camp_pop.gd" id="1_8rjhs"]
+[ext_resource type="Script" uid="uid://cabijglewlv2x" path="res://camp_pop.gd" id="1_8rjhs"]
 [ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_rv16w"]
 [ext_resource type="Script" uid="uid://b1givql6054oe" path="res://scenes/popups/clifffbutton.gd" id="2_t0jex"]
 

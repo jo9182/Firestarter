@@ -15,5 +15,5 @@ func _on_button_pressed() -> void:
 
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/popups/qte_red_and_green.tscn")
+	get_tree().change_scene_to_file("res://scenes/popups/woods game/qte_red_and_green.tscn")
 	pass
