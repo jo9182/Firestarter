@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dt0vjol88n4jr"]
+[gd_scene load_steps=5 format=3 uid="uid://dt0vjol88n4jr"]
 
 [ext_resource type="Script" uid="uid://c2xg2f5l6qscg" path="res://west_pop.gd" id="1_wguew"]
-[ext_resource type="Script" uid="uid://b1givql6054oe" path="res://scenes/popups/clifffbutton.gd" id="2_mhcjr"]
+[ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_wguew"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhcjr"]
+font = ExtResource("2_wguew")
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_s4rak"]
+font = ExtResource("2_wguew")
+font_size = 24
 
 [node name="west_pop" type="Control"]
 z_index = 20
@@ -13,11 +21,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_wguew")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
 process_priority = 1
 layer = 2
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
 z_index = 3
 offset_left = 390.0
 offset_top = 238.0
@@ -26,7 +34,41 @@ offset_bottom = 278.0
 scale = Vector2(9.76211, 4.26824)
 color = Color(0.809982, 0.388597, 0.235883, 1)
 
-[node name="Button" type="Button" parent="CanvasLayer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2"]
+z_index = 3
+anchors_preset = -1
+anchor_top = -0.0339506
+anchor_bottom = 0.0432099
+offset_left = 391.0
+offset_top = 268.0
+offset_right = 953.0
+offset_bottom = 409.0
+scale = Vector2(0.693966, 0.853967)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="volLabel" type="Label" parent="CanvasLayer2/VBoxContainer"]
+layout_mode = 2
+text = "Tinder (QTE)"
+label_settings = SubResource("LabelSettings_mhcjr")
+horizontal_alignment = 1
+
+[node name="volLabel2" type="Label" parent="CanvasLayer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Collect tinder  from an empty bird's nest in a tree."
+label_settings = SubResource("LabelSettings_s4rak")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="collect" type="Button" parent="CanvasLayer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_fonts/font = ExtResource("2_wguew")
+text = "Collect Rocks"
+
+[node name="Button" type="Button" parent="CanvasLayer2"]
 z_index = 3
 custom_minimum_size = Vector2(30, 0)
 offset_left = 750.0
@@ -35,31 +77,5 @@ offset_right = 781.0
 offset_bottom = 269.0
 text = "X"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
-z_index = 3
-offset_left = 391.0
-offset_top = 272.0
-offset_right = 953.0
-offset_bottom = 370.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="volLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
-layout_mode = 2
-text = "QTE"
-
-[node name="volLabel2" type="Label" parent="CanvasLayer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_direction = 2
-layout_mode = 2
-text = "In this game you will have to press the right keys quick enough to to win"
-autowrap_mode = 2
-
-[node name="start" type="Button" parent="CanvasLayer/VBoxContainer"]
-layout_mode = 2
-text = "Start
-"
-script = ExtResource("2_mhcjr")
-
-[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CanvasLayer2/VBoxContainer/collect" to="." method="_on_collect_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Button" to="." method="_on_button_pressed"]

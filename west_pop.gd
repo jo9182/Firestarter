@@ -11,9 +11,6 @@ func _on_button_pressed() -> void:
 	queue_free()
 
 
-
-
-
-func _on_start_pressed() -> void:
+func _on_collect_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/popups/qte_keys.tscn")
-	pass
+	pass # Replace with function body.
