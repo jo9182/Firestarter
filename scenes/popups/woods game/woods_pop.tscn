@@ -1,7 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkt5x5cw0xn22"]
+[gd_scene load_steps=5 format=3 uid="uid://dkt5x5cw0xn22"]
 
+<<<<<<< HEAD:scenes/popups/woods game/woods_pop.tscn
 [ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_rcht0"]
 [ext_resource type="Script" uid="uid://b1givql6054oe" path="res://scenes/popups/clifffbutton.gd" id="2_wvhwy"]
+=======
+[ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_bi6rc"]
+[ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_bi6rc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_la7gn"]
+font = ExtResource("2_bi6rc")
+font_size = 28
+
+[sub_resource type="LabelSettings" id="LabelSettings_hmf1t"]
+font = ExtResource("2_bi6rc")
+font_size = 24
+>>>>>>> ef0754f5fc29bed4ccd21c7c424e87fcd54349d2:scenes/popups/woods_pop.tscn
 
 [node name="woods_pop" type="Control"]
 z_index = 20
@@ -26,6 +39,40 @@ offset_bottom = 278.0
 scale = Vector2(9.76211, 4.26824)
 color = Color(0.809982, 0.388597, 0.235883, 1)
 
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+z_index = 3
+anchors_preset = -1
+anchor_top = -0.0339506
+anchor_bottom = 0.0432099
+offset_left = 391.0
+offset_top = 268.0
+offset_right = 953.0
+offset_bottom = 409.0
+scale = Vector2(0.693966, 0.853967)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="volLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Kindling (QTE)"
+label_settings = SubResource("LabelSettings_la7gn")
+horizontal_alignment = 1
+
+[node name="volLabel2" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Break sticks by hitting the green mark at the right time to make kindling!"
+label_settings = SubResource("LabelSettings_hmf1t")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="collect" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_fonts/font = ExtResource("2_bi6rc")
+text = "Get to snappin'"
+
 [node name="Button" type="Button" parent="CanvasLayer"]
 z_index = 3
 custom_minimum_size = Vector2(30, 0)
@@ -35,6 +82,7 @@ offset_right = 781.0
 offset_bottom = 269.0
 text = "X"
 
+<<<<<<< HEAD:scenes/popups/woods game/woods_pop.tscn
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 z_index = 3
 offset_left = 391.0
@@ -61,5 +109,7 @@ text = "Start
 "
 script = ExtResource("2_wvhwy")
 
+=======
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/collect" to="." method="_on_collect_pressed"]
+>>>>>>> ef0754f5fc29bed4ccd21c7c424e87fcd54349d2:scenes/popups/woods_pop.tscn
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/start" to="." method="_on_start_pressed"]
