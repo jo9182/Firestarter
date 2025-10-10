@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 			is_game_over(count)
 			
 func is_game_over(wins : int) -> void:
-	if count < 3:
-		return
-	else:
+	if count > 3:
 		get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
+	
+		
