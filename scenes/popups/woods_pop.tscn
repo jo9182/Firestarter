@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cekj4o511in46"]
+[gd_scene load_steps=5 format=3 uid="uid://cui160sa6h83c"]
 
 [ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_bi6rc"]
 [ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_bi6rc"]

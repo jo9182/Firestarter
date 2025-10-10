@@ -226,7 +226,7 @@ script = ExtResource("1_e5buh")
 
 [node name="player" parent="." instance=ExtResource("1_7345j")]
 z_index = 1
-position = Vector2(325, 25)
+position = Vector2(108, 298)
 
 [node name="ground" type="TileMapLayer" parent="."]
 z_index = -1
