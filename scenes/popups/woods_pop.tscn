@@ -1,14 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://cui160sa6h83c"]
+[gd_scene load_steps=5 format=3 uid="uid://cekj4o511in46"]
 
 [ext_resource type="Script" uid="uid://dax4urqntvqwk" path="res://woods_pop.gd" id="1_bi6rc"]
-[ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_la7gn"]
+[ext_resource type="FontFile" uid="uid://1o4462pcke6p" path="res://sprites/font/PixelOperator8-Bold.ttf" id="2_bi6rc"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_mhcjr"]
-font = ExtResource("2_la7gn")
-font_size = 32
+[sub_resource type="LabelSettings" id="LabelSettings_la7gn"]
+font = ExtResource("2_bi6rc")
+font_size = 28
 
-[sub_resource type="LabelSettings" id="LabelSettings_s4rak"]
-font = ExtResource("2_la7gn")
+[sub_resource type="LabelSettings" id="LabelSettings_hmf1t"]
+font = ExtResource("2_bi6rc")
 font_size = 24
 
 [node name="woods_pop" type="Control"]
@@ -50,23 +50,23 @@ metadata/_edit_use_anchors_ = true
 
 [node name="volLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-text = "Sticks (QTE)"
-label_settings = SubResource("LabelSettings_mhcjr")
+text = "Kindling (QTE)"
+label_settings = SubResource("LabelSettings_la7gn")
 horizontal_alignment = 1
 
 [node name="volLabel2" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Collect sticks by breaking them in half and collecting them"
-label_settings = SubResource("LabelSettings_s4rak")
+text = "Break sticks by hitting the green mark at the right time to make kindling!"
+label_settings = SubResource("LabelSettings_hmf1t")
 horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="collect" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 10
-theme_override_fonts/font = ExtResource("2_la7gn")
-text = "Collect Rocks"
+theme_override_fonts/font = ExtResource("2_bi6rc")
+text = "Get to snappin'"
 
 [node name="Button" type="Button" parent="CanvasLayer"]
 z_index = 3
