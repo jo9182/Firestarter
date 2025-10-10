@@ -19,11 +19,12 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_pressed("ui_accept"):
 		if pointer.position.x >= safestartpos.position.x and pointer.position.x <= safeendpos.position.x:
+			print(count)
 			count += 1
 			is_game_over(count)
 			
 func is_game_over(wins : int) -> void:
 	if count > 3:
-		get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
+		get_tree().change_scene_to_file("res://scenes/woodland.tscn")
 	
 		
