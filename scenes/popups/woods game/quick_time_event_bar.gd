@@ -17,14 +17,17 @@ func _process(delta: float) -> void:
 	
 	pointer.position.x += direction
 	
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept"):
+		print("run")
 		if pointer.position.x >= safestartpos.position.x and pointer.position.x <= safeendpos.position.x:
 			print(count)
 			count += 1
 			is_game_over(count)
-			
+	
 func is_game_over(wins : int) -> void:
-	if count > 3:
+	if count >= 3:
 		get_tree().change_scene_to_file("res://scenes/woodland.tscn")
+	else:
+		count = count
 	
 		
