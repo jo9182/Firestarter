@@ -18,6 +18,7 @@ position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_8yyji")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
 texture = ExtResource("2_ge2pc")
 hframes = 16
 vframes = 13
