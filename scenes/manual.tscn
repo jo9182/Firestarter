@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjjkrtngspvr2"]
+
+[ext_resource type="Script" uid="uid://bxxljocebv7nq" path="res://scripts/manual.gd" id="1_pxtqk"]
+[ext_resource type="Texture2D" uid="uid://bnq802ja555wm" path="res://scenes/popups/woods game/log.png" id="2_ctj7d"]
+[ext_resource type="Texture2D" uid="uid://b7dff2id1l557" path="res://sprites/objects/blue_arrow.svg" id="3_6fbm8"]
+
+[node name="Manual" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_pxtqk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 218.0
+offset_right = -871.0
+offset_bottom = -167.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+color = Color(0.952941, 0.803922, 0.345098, 1)
+
+[node name="left" type="TextureButton" parent="CanvasLayer"]
+offset_left = 1.0
+offset_top = 429.0
+offset_right = 688.0
+offset_bottom = 765.0
+scale = Vector2(0.15405, 0.153709)
+texture_normal = ExtResource("3_6fbm8")
+stretch_mode = 0
+flip_h = true
+
+[node name="right" type="TextureButton" parent="CanvasLayer"]
+offset_left = 166.0
+offset_top = 474.0
+offset_right = 853.0
+offset_bottom = 810.0
+scale = Vector2(0.17004, -0.121315)
+texture_normal = ExtResource("3_6fbm8")
+stretch_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 2.0
+offset_top = 218.0
+offset_right = 279.0
+offset_bottom = 370.0
+
+[node name="Pg Number" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Page 1"
+autowrap_mode = 2
+
+[node name="Description" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Dry rocks are found to the north and are needed to be placed first in a circle to prevent fire from spreading uncontrollably"
+autowrap_mode = 2
+
+[node name="Image" type="Sprite2D" parent="CanvasLayer/VBoxContainer"]
+position = Vector2(40, 174)
+scale = Vector2(0.36, 0.24)
+texture = ExtResource("2_ctj7d")
+
+[connection signal="pressed" from="CanvasLayer/left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="CanvasLayer/right" to="." method="_on_right_pressed"]

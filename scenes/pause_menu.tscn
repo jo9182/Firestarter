@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c2nfodrjf8ejq"]
+[gd_scene load_steps=8 format=3 uid="uid://c2nfodrjf8ejq"]
 
 [ext_resource type="Script" uid="uid://b07wmpv7orxwp" path="res://scripts/pause_menu.gd" id="1_n87rw"]
 [ext_resource type="Shader" uid="uid://dnbp7iqvmgbmw" path="res://shaders/pause_menu.gdshader" id="2_myx47"]
+[ext_resource type="PackedScene" uid="uid://cjjkrtngspvr2" path="res://scenes/manual.tscn" id="3_kukqi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kukqi"]
 shader = ExtResource("2_myx47")
@@ -190,6 +191,9 @@ text = "Settings"
 [node name="Quit" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="Manual" parent="PanelContainer" instance=ExtResource("3_kukqi")]
+layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
