@@ -19,19 +19,19 @@ func _ready() -> void:
 func _on_right_pressed() -> void:
 	if pos == 1:
 		pos = 2
-		description.text = str("The logs go on last in a teepee form so that the fire can burn longer with the logs supporting it")
+		description.text = str("The logs go next, and for a traditional teepee fire, you prop the logs up against each other to make a cone shape.")
 		pg_number.text = str("page 2")
 		image.texture = load("res://scenes/popups/woods game/log.png")
 		left.visible = true
 		return
 	elif pos == 2:
 		pos = 3
-		description.text = str("The kindeling goes on third so that the fire has fuel to burn")
+		description.text = str("The tinder goes on third so that the fire has fuel to burn")
 		pg_number.text = str("page 3")
 		image.texture = load("res://sprites/objects/sticks-removebg-preview.png")
 	elif pos == 3:
 		pos = 4
-		description.text = str("The tinder will go on second after the dry rocks so that the fire can catch")
+		description.text = str("The kindling will go on second after the dry rocks so that the fire can catch")
 		pg_number.text = str("page 4")
 		image.texture = load("res://sprites/objects/tinder-removebg-preview.png")
 		return
@@ -56,7 +56,7 @@ func _on_right_pressed() -> void:
 func _on_left_pressed() -> void:
 	if pos == 2:
 		pos = 1
-		description.text = str("Dry rocks are found to the north and are needed to be placed first in a circle to prevent fire from spreading uncontrollably")
+		description.text = str("Dry rocks are the first components needed for a campfire. They can be found to the north of your campsite. They are placed in a ring to contain the fire. Safety First!")
 		pg_number.text = str("page 1")
 		image.texture = load("res://sprites/objects/Rocks-removebg-preview.png")
 		left.visible = false

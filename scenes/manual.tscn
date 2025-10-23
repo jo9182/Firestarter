@@ -56,11 +56,11 @@ autowrap_mode = 2
 
 [node name="Description" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-text = "Dry rocks are found to the north and are needed to be placed first in a circle to prevent fire from spreading uncontrollably"
+text = "Dry rocks are the first components needed for a campfire. They can be found to the north of your campsite. They are placed in a ring to contain the fire. Safety First!"
 autowrap_mode = 2
 
 [node name="Image" type="Sprite2D" parent="CanvasLayer/VBoxContainer"]
-position = Vector2(40, 174)
+position = Vector2(40, 188)
 scale = Vector2(0.36, 0.24)
 texture = ExtResource("3_pxtqk")
 
