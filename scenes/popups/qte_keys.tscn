@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://c0ky463vqb101"]
+[gd_scene load_steps=12 format=4 uid="uid://c0ky463vqb101"]
 
 [ext_resource type="Texture2D" uid="uid://cnhiwk3fh2mts" path="res://sprites/tilesets/plains.png" id="1_6ycen"]
 [ext_resource type="Texture2D" uid="uid://bka7dakj81ko5" path="res://sprites/tilesets/grass.png" id="2_8wu08"]
 [ext_resource type="Texture2D" uid="uid://c5ujchac7f61p" path="res://sprites/objects/objects.png" id="3_hughf"]
 [ext_resource type="Texture2D" uid="uid://bjobqh3fvi283" path="res://sprites/tilesets/topdown.png" id="4_durs5"]
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="5_2h2c8"]
+[ext_resource type="Script" uid="uid://ri11ejojwqxa" path="res://scripts/Key_Finder.gd" id="6_8wu08"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_36mbw"]
 texture = ExtResource("1_6ycen")
@@ -196,13 +197,7 @@ sources/1 = SubResource("TileSetAtlasSource_n7t8r")
 sources/2 = SubResource("TileSetAtlasSource_b5pkp")
 sources/3 = SubResource("TileSetAtlasSource_igl16")
 
-[node name="QTE_KEYS" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="QTE_KEYS" type="Node2D"]
 
 [node name="ground" type="TileMapLayer" parent="."]
 use_parent_material = true
@@ -214,3 +209,6 @@ script = ExtResource("5_2h2c8")
 zoom = Vector2(3.79, 3.682)
 limit_left = 0
 limit_top = 0
+
+[node name="KEY_FINDER" type="Node2D" parent="."]
+script = ExtResource("6_8wu08")
