@@ -147,6 +147,13 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_n87rw")
 
+[node name="Manual" parent="." instance=ExtResource("3_kukqi")]
+layout_mode = 2
+offset_left = -129.5
+offset_top = -118.0
+offset_right = 129.5
+offset_bottom = 118.0
+
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_kukqi")
 layout_mode = 0
@@ -191,9 +198,6 @@ text = "Settings"
 [node name="Quit" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
-
-[node name="Manual" parent="PanelContainer" instance=ExtResource("3_kukqi")]
-layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
