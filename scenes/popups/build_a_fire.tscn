@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=4 uid="uid://ctqvegdopudlo"]
+[gd_scene load_steps=15 format=4 uid="uid://ctqvegdopudlo"]
 
 [ext_resource type="Texture2D" uid="uid://cnhiwk3fh2mts" path="res://sprites/tilesets/plains.png" id="1_0d40w"]
 [ext_resource type="Texture2D" uid="uid://bka7dakj81ko5" path="res://sprites/tilesets/grass.png" id="2_li5gt"]
 [ext_resource type="Texture2D" uid="uid://c5ujchac7f61p" path="res://sprites/objects/objects.png" id="3_7ouim"]
 [ext_resource type="Texture2D" uid="uid://bjobqh3fvi283" path="res://sprites/tilesets/topdown.png" id="4_5kubk"]
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="5_0g6hw"]
+[ext_resource type="Script" uid="uid://cd0u8ebxuyquq" path="res://scenes/popups/fire.gd" id="6_li5gt"]
+[ext_resource type="Texture2D" uid="uid://c1cqdg7cxo1bf" path="res://sprites/objects/Rocks-removebg-preview.png" id="7_7ouim"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_36mbw"]
 texture = ExtResource("1_0d40w")
@@ -196,13 +198,13 @@ sources/1 = SubResource("TileSetAtlasSource_n7t8r")
 sources/2 = SubResource("TileSetAtlasSource_b5pkp")
 sources/3 = SubResource("TileSetAtlasSource_igl16")
 
-[node name="BUILD A FIRE" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5kubk"]
+size = Vector2(88.2291, 82.576)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ouim"]
+size = Vector2(47, 47)
+
+[node name="BUILD A FIRE" type="Node2D"]
 
 [node name="ground" type="TileMapLayer" parent="."]
 use_parent_material = true
@@ -214,3 +216,29 @@ script = ExtResource("5_0g6hw")
 zoom = Vector2(3.79, 3.682)
 limit_left = 0
 limit_top = 0
+
+[node name="fire" type="Node2D" parent="."]
+script = ExtResource("6_li5gt")
+
+[node name="Image" type="Sprite2D" parent="fire"]
+position = Vector2(152, 159)
+scale = Vector2(0.178962, 0.165344)
+texture = ExtResource("7_7ouim")
+
+[node name="image_box" type="Area2D" parent="fire/Image"]
+
+[node name="image_body" type="CollisionShape2D" parent="fire/Image/image_box"]
+position = Vector2(-32.9389, 1.04797)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_5kubk")
+
+[node name="Box" type="Area2D" parent="fire"]
+
+[node name="Drop_Zone" type="CollisionShape2D" parent="fire/Box"]
+position = Vector2(152.5, 88.5)
+shape = SubResource("RectangleShape2D_7ouim")
+
+[node name="start" type="Marker2D" parent="fire"]
+position = Vector2(146, 159)
+
+[connection signal="body_entered" from="fire/Box" to="fire" method="_on_box_body_entered"]
