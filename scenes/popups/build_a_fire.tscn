@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://pod3ftf5n8lf" path="res://scripts/leveltilemap.gd" id="5_0g6hw"]
 [ext_resource type="Script" uid="uid://cd0u8ebxuyquq" path="res://scenes/popups/fire.gd" id="6_li5gt"]
 [ext_resource type="Texture2D" uid="uid://c1cqdg7cxo1bf" path="res://sprites/objects/Rocks-removebg-preview.png" id="7_7ouim"]
+[ext_resource type="Texture2D" uid="uid://du43mdrs1y5hh" path="res://sprites/objects/campfire.png" id="8_5kubk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_36mbw"]
 texture = ExtResource("1_0d40w")
@@ -201,9 +202,6 @@ sources/3 = SubResource("TileSetAtlasSource_igl16")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kubk"]
 size = Vector2(88.2291, 82.576)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ouim"]
-size = Vector2(47, 47)
-
 [node name="BUILD A FIRE" type="Node2D"]
 
 [node name="ground" type="TileMapLayer" parent="."]
@@ -229,16 +227,25 @@ texture = ExtResource("7_7ouim")
 
 [node name="image_body" type="CollisionShape2D" parent="fire/Image/image_box"]
 position = Vector2(-32.9389, 1.04797)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_5kubk")
-
-[node name="Box" type="Area2D" parent="fire"]
-
-[node name="Drop_Zone" type="CollisionShape2D" parent="fire/Box"]
-position = Vector2(152.5, 88.5)
-shape = SubResource("RectangleShape2D_7ouim")
 
 [node name="start" type="Marker2D" parent="fire"]
 position = Vector2(146, 159)
 
-[connection signal="body_entered" from="fire/Box" to="fire" method="_on_box_body_entered"]
+[node name="safestart" type="Marker2D" parent="fire"]
+position = Vector2(128, 90)
+
+[node name="safetop" type="Marker2D" parent="fire"]
+position = Vector2(149, 64)
+
+[node name="safeend" type="Marker2D" parent="fire"]
+position = Vector2(176, 85)
+
+[node name="safebottom" type="Marker2D" parent="fire"]
+position = Vector2(152, 112)
+
+[node name="fire_image" type="Sprite2D" parent="fire"]
+visible = false
+position = Vector2(152, 81)
+scale = Vector2(0.116, 0.0905)
+texture = ExtResource("8_5kubk")

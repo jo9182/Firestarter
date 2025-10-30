@@ -4,7 +4,7 @@ extends Node
 #const PLAYER = preload("res://scenes/player.tscn")
 var player : Player
 var player_spawned : bool = false
-
+var mini_count : int = 0
 func _ready() -> void:
 	#add_player_instance()
 	await get_tree().create_timer(.2).timeout

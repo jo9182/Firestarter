@@ -46,153 +46,207 @@ func _process(_delta: float) -> void:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_1.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_3.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_2.queue_free()	
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 1:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_1.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_2.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_3.queue_free()	
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 2:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_1.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_3.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_2.queue_free()	
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 3:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_2.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_1.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_3.queue_free()	
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 4:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_2.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_1.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_3.queue_free()	
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 5:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_2.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_3.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_1.queue_free()	
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 6:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_3.queue_free()
 					victory.visible = true	
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_1.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_2.queue_free()		
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 7:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_3.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_2.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:	
 					bush_1.queue_free()		
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 	elif chosenTwo == 8:
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_2.position.x and get_local_mouse_position().x <= safeend_2.position.x:
 				if get_local_mouse_position().y >= safestartop_2.position.y and get_local_mouse_position().y <= safeendtop_2.position.y:
 					bush_3.queue_free()
 					victory.visible = true
-					get_tree().paused = true
+					await get_tree().create_timer(1).timeout
+					PlayerManager.mini_count += 1
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart_3.position.x and get_local_mouse_position().x <= safeend_3.position.x:
 				if get_local_mouse_position().y >= safestartop_3.position.y and get_local_mouse_position().y <= safeendtop_3.position.y:
 					bush_2.queue_free()
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 		if Input.is_action_just_pressed("clicker"):
 			if get_local_mouse_position().x >= safestart.position.x and get_local_mouse_position().x <= safeend.position.x:
 				if get_local_mouse_position().y >= safestarttop.position.y and get_local_mouse_position().y <= safeendtop.position.y:
 					bush_1.queue_free()	
 					failure.visible = true
+					await get_tree().create_timer(1).timeout
+					get_tree().change_scene_to_file("res://scenes/deep_woods.tscn")
 
 
 func randomizer(cO : Sprite2D) -> void:

@@ -29,6 +29,8 @@ func _process(delta: float) -> void:
 		print(points)
 	else:
 		victory.visible = true
+		await get_tree().create_timer(1).timeout
+		get_tree().change_scene_to_file("res://scenes/west.tscn")
 	pass
 	
 func choose_wasd() -> void:
